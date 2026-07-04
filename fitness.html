@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFitnessPal App Redesign - Tatheer</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="portfolio-wrapper">
+        
+        <!-- Navbar -->
+        <header class="nav-header">
+            <div class="nav-logo">
+    <a href="index.html">Tatheer<span class="accent-dot">.</span></a>
+</div>
+            
+            <nav class="nav-center-links">
+                <a href="about.html">About Me</a>
+                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
+            </nav>
+            
+            <div class="nav-action">
+                <a href="mailto:tatheerulhassan799@gmail.com" class="btn-talk">Let's Talk &rarr;</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="cs-hero-section">
+            <div class="cs-hero-content">
+                <div>
+                <!-- Optional: A placeholder for the MyFitnessPal logo -->
+                <img src="assets/img/fit/L.png" alt="MyFitnessPal" style="max-height: 40px; margin-bottom: 32px; opacity: 0.9;">
+                </div>
+                <div class="cs-hero-tags">
+                    <span class="status-pill cs-pill-dark">Case Study</span>
+                </div>
+                
+                <h1 class="cs-hero-title">My Fitness Pal<br>App Redesign</h1>
+                
+                <div class="cs-hero-meta">
+                    <div class="meta-box">
+                        <span class="meta-label">My Role</span>
+                        <span class="meta-value">UX Designer</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label">Duration</span>
+                        <span class="meta-value">5 Days</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label">Year</span>
+                        <span class="meta-value">2023</span>
+                    </div>
+                </div>
+                
+            </div>
+
+           <div class="cs-hero-visual">
+                <!-- Added inline max-width and reset the transform to constrain the tall mobile mockup -->
+                <img src="assets/img/fit/Home.png" alt="MyFitnessPal App UI Redesign" class="cs-hero-img" style="max-width: 350px; transform: none; margin: 0 auto;">
+            </div>
+        </section>
+
+    
+        <!-- Introduction Section -->
+        <section class="cs-intro-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Introduction</h2>
+                <p class="cs-body-text">
+                    MyFitnessPal is a leading calorie tracking app that helps users achieve their fitness goals. 
+                    The app offers a comprehensive database of foods and drinks, as well as a variety of features 
+                    to help users stay motivated and on track.
+                </p>
+            </div>
+        </section>
+
+ <!-- Quick Access Navigation -->
+        <section class="cs-quick-nav-section">
+            <span class="quick-nav-label">Jump to section:</span>
+            <nav class="quick-nav-links">
+                <a href="#solution" class="nav-pill">Solution</a>
+                <a href="#research" class="nav-pill">Research & Data</a>
+                <a href="#design" class="nav-pill">Final Designs</a>
+                <a href="#takeaways" class="nav-pill">Takeaways</a>
+            </nav>
+        </section>
+<!-- Scope & Constraints Section -->
+        <section class="cs-text-section">
+            <h2 class="cs-section-title left-align">Scope & constraints</h2>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0; max-width: 100%;">
+                <li><strong>Scope:</strong> Redesign focused on the core daily experience—Home/Dashboard, logging entry points, progress overview, and a few supporting screens needed to complete these tasks.</li>
+                <li><strong>Out of scope:</strong> Onboarding, subscription/paywall, community/social features, and backend logic (nutrition database accuracy, recommendations algorithm) were intentionally not redesigned.</li>
+                <li><strong>Constraints:</strong> UI/UX improvements assumed no backend changes; the goal was to improve clarity, navigation, and speed-to-action using layout, hierarchy, and interaction changes.</li>
+                <li><strong>Platform:</strong> Designed for a single platform (iOS/Android) to keep patterns consistent and reduce complexity.</li>
+            </ul>
+        </section>
+
+        <!-- Evidence Section -->
+        <section class="cs-text-section" style="padding-top: 0;">
+            <h2 class="cs-section-title left-align">Evidence</h2>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0; max-width: 100%;">
+                <li><strong>App store review themes (directional):</strong> Reviews repeatedly mention friction in logging, screens feeling busy, and difficulty finding key daily numbers quickly (e.g., remaining calories/macros).</li>
+                <li><strong>Competitive scan (directional):</strong> Many fitness trackers prioritize a single primary action (Log/Track) and keep the dashboard focused on today’s status rather than showing too many secondary features upfront.</li>
+                <li><strong>Heuristic review (Nielsen-style checks):</strong> Several screens showed high cognitive load (too many competing elements), inconsistent hierarchy, and unclear action priority, which can slow down routine tasks like daily tracking.</li>
+                <li><strong>Design implication:</strong> The redesign prioritizes a “today-first” dashboard, clearer primary CTA for logging, and simplified navigation to reduce scanning and decision effort.</li>
+            </ul>
+        </section>
+
+        <section id="research" class="cs-text-section">
+            <h2 class="cs-section-title">Desk Research</h2>
+            <div class="cs-text-center-wrapper">
+                <p class="cs-body-text">
+                    Due to the short timeframe of the project, I was unable to conduct user interviews in person. Instead, I gathered feedback from MyFitnessPal users in two ways.
+                </p>
+                <p class="cs-body-text">
+                    I analyzed the user feedback section of the MyFitnessPal app and noted the <strong>negative feedbacks related to UI</strong> with the highest number of reacts.
+                </p>
+                <p class="cs-body-text">
+                    I also joined several MyFitnessPal Facebook groups and asked users to share their feedback on the app's UI. This gave me a more in-depth understanding of users' specific concerns and suggestions.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-visuals-section" style="padding-top: 0; padding-bottom: 40px;">
+            <div class="cs-visual-row-single" style="margin-bottom: 0;">
+                <img src="assets/img/fit/1.png" alt="MyFitnessPal App Store Reviews and User Quotes" class="cs-full-img" style="border-radius: 16px;">
+            </div>
+        </section>
+
+        <section class="cs-text-section" style="padding-top: 40px;">
+            <div class="about-card">
+                <h2 class="cs-section-title left-align" style="margin-bottom: 16px;">Key Insights</h2>
+                <p class="cs-body-text left-align">
+                    After carefully reviewing user feedback and observing app layout. I have identified several key insights. Mentioned in the list below.
+                </p>
+                
+                <ul class="cs-bullet-list left-align" style="margin-top: 24px; margin-left: 0; max-width: 100%;">
+                    <li>Due to poor navigation bar, its hard for new user to figured out how to add food.</li>
+                    <li>Users are unhappy that the barcode scanner is a paid feature. They believe that it is a basic feature that should be included in the free version of the app.</li>
+                    <li>Not any way to see the image of food, while many foods have same or different names.</li>
+                    <li>Users find the UI to be outdated and boring. They would like to see a more modern and stylish design.</li>
+                    <li>UI is too cluttered and confusing. They would like to see a more streamlined and efficient interface.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <h2 class="cs-section-title left-align">Problem Statement</h2>
+            <p class="cs-body-text left-align">
+                MyFitnessPal's current user interface (UI) is difficult to navigate, has too many 
+                ads, feels outdated, and users dislike the paid barcode feature. These factors 
+                are frustrating users and impacting their ability to achieve their fitness goals.
+            </p>
+        </section>
+
+        <section class="cs-text-section" style="padding-top: 0;">
+            <h2 class="cs-section-title left-align">Evidence</h2>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0; max-width: 100%;">
+                <li>User research has shown that many users find the MyFitnessPal UI to be cluttered, confusing, and difficult to use.</li>
+                <li>Users have complained that it is difficult to find the information they need quickly and easily.</li>
+                <li>Users have also expressed dissatisfaction with the overall look and feel of the UI, which they find to be outdated and unprofessional.</li>
+                <li>Finally, many users have expressed disapproval of the paid barcode feature, which they feel is unnecessary and overpriced.</li>
+            </ul>
+        </section>
+
+        <section id="solution" class="cs-text-section" style="padding-top: 0;">
+            <h2 class="cs-section-title left-align">Solution</h2>
+            <p class="cs-body-text left-align">
+                To redesign the MyFitnessPal UI to be more intuitive, streamlined, and modern. 
+                This would be achieved by:
+            </p>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0; max-width: 100%;">
+                <li>Using a clear and consistent design language</li>
+                <li>Making the app easy to navigate</li>
+                <li>Organizing the app in a logical way</li>
+                <li>Using white space to make the app more visually appealing and easier to read</li>
+            </ul>
+        </section>
+
+        <!-- Feature Highlights (Images Only) -->
+        <section class="cs-text-section cs-screens-section" style="padding-top: 0; padding-bottom: 60px;">
+            <div class="screens-stack" style="margin-top: 0;">
+                <img src="assets/img/fit/2.png" alt="Simplified Layout" class="cs-full-img">
+                <img src="assets/img/fit/3.png" alt="Easy To Navigate" class="cs-full-img">
+                <img src="assets/img/fit/4.png" alt="Visually Appealing Design" class="cs-full-img">
+            </div>
+        </section>
+
+        <!-- Screens Selected for Redesign -->
+        <section class="cs-text-section cs-screens-section" style="padding-top: 60px;">
+            <h2 class="cs-section-title left-align">Screens selected for redesign</h2>
+            
+            <div class="cs-visual-row-single" style="margin-top: 40px;">
+                <!-- For the best responsiveness, export the row of 6 screens as one single image -->
+                <img src="assets/img/fit/5.png" alt="6 Original MyFitnessPal Screens" class="cs-full-img">
+            </div>
+        </section>
+
+        <!-- Sketching Section -->
+        <section class="cs-text-section cs-design-phase" style="padding-bottom: 40px;">
+            <h2 class="cs-section-title left-align">Sketching</h2>
+            <p class="cs-body-text left-align">
+                Before diving into the actual design process, I created some rough sketches. These sketches were 
+                essential for exploring different ideas and quickly refining my designs.
+            </p>
+            
+            <div class="cs-visual-row-single" style="margin-top: 40px;">
+                <!-- Export this image with its rounded corners or let the border-radius handle it -->
+                <img src="assets/img/fit/6.png" alt="Initial Rough Sketches" class="cs-full-img" style="border-radius: 24px;">
+            </div>
+        </section>
+
+        <!-- Wireframing Section -->
+        <section class="cs-text-section cs-design-phase" style="padding-top: 0; padding-bottom: 60px;">
+            <h2 class="cs-section-title left-align">Wireframing</h2>
+            <p class="cs-body-text left-align" style="margin-bottom: 8px;">
+                After creating some rough sketches, I created low-fidelity wireframes to get a 
+                sense of how the design would look and feel.
+            </p>
+            <p class="cs-body-text left-align">
+                Wireframes were essential for testing different layout and navigation options, 
+                identifying potential usability problems, and communicating my ideas to others.
+            </p>
+            
+            <div class="cs-visual-row-single" style="margin-top: 40px;">
+                <!-- Export this image with its light grey background container -->
+                <img src="assets/img/fit/7.png" alt="Low-Fidelity Wireframes" class="cs-full-img" style="border-radius: 24px;">
+            </div>
+        </section>
+
+        <!-- User Testing Section -->
+        <section class="cs-text-section" style="padding-top: 0;">
+            <h2 class="cs-section-title left-align">User Testing</h2>
+            <p class="cs-body-text left-align">
+                After completing the design and prototype, I returned to the Facebook groups to ask users for their 
+                feedback. I shared my prototype with them and conducted usability testing with five users to 
+                evaluate the usability of the new design.
+            </p>
+            <p class="cs-body-text left-align">
+                I asked each user to review and experience the new design prototype. While they were unable to 
+                use the app in the same way as the original, they were able to get a sense of the user experience.
+            </p>
+
+            <!-- User Testing Feedback Box 1 -->
+            <div class="about-card" style="display: flex; gap: 20px; align-items: flex-start; background-color: #ffffff; padding: 24px 32px; margin-top: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                <img src="assets/img/fit/Idea.png" alt="Insight Lightbulb" style="width: 28px; height: 28px; flex-shrink: 0; margin-top: 2px;">
+                <p class="cs-body-text" style="margin: 0; font-size: 14px; line-height: 1.6;">
+                    One of the key findings from my usability testing was that users found the food logging feature to be 
+                    much easier to use than the previous design. They appreciated being able to see the picture of foods 
+                    while logging, and the bottom navigation bar was a particularly popular feature.
+                </p>
+            </div>
+
+            <!-- User Testing Feedback Box 2 -->
+            <div class="about-card" style="display: flex; gap: 20px; align-items: flex-start; background-color: #ffffff; padding: 24px 32px; margin-top: 20px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+                <img src="assets/img/fit/Idea.png" alt="Insight Lightbulb" style="width: 28px; height: 28px; flex-shrink: 0; margin-top: 2px;">
+                <p class="cs-body-text" style="margin: 0; font-size: 14px; line-height: 1.6;">
+                    Another key finding was that users can now use the barcode scanner to add food for free by 
+                    watching an ad. This makes the premium feature more accessible to users, which could lead to 
+                    increased adoption and engagement.
+                </p>
+            </div>
+        </section>
+
+        <!-- Before & After Comparison Section -->
+        <section class="cs-text-section" style="padding-bottom: 20px;">
+            <h2 class="cs-section-title">Before & After</h2>
+        </section>
+
+        <section id="design" class="cs-visuals-section" style="padding-top: 0;">
+            <div class="cs-visual-row-single">
+                <!-- Added a max-width of 700px and margin: 0 auto to center it -->
+                <img src="assets/img/fit/8.png" alt="Comprehensive Before and After Screens Comparison" class="cs-full-img" style="max-width: 700px; margin: 0 auto; display: block; border-radius: 24px;">
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="takeaways" class="cs-text-section" style="padding-bottom: 120px;">
+            <h2 class="cs-section-title left-align">Results</h2>
+            <p class="cs-body-text left-align">
+                This concept redesign improves the daily tracking experience by clarifying hierarchy on the Home 
+                screen, reducing visual noise, and making logging the most obvious next action. The expected 
+                outcome is faster logging and easier scanning of key metrics like calories/macros.
+            </p>
+
+            <h3 class="glance-subtitle left-align" style="margin-top: 40px;">
+                Success criteria <span style="font-size: 14px; font-weight: 400; color: #888; text-transform: none;">(to validate)</span>
+            </h3>
+            <ul class="cs-bullet-list left-align" style="margin-top: 16px; margin-left: 0; max-width: 100%;">
+                <li>20–30% faster time to log a meal.</li>
+                <li>90%+ task success for "find remaining calories/macros."</li>
+                <li>+10% increase in daily logging completion.</li>
+            </ul>
+        </section>
+
+        <!-- Footer (Copied exactly from drive.html) -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                
+                <p class="footer-subtitle">Open To Remote Product Design Roles</p>
+                <h2 class="footer-title">Let's Make Something Clear.</h2>
+                
+                <p class="footer-desc">
+                    Open To Remote Product Design Roles And Select Freelance Projects. Based In Pakistan, Working Async-First Across Time Zones.
+                </p>
+        
+                <div class="footer-buttons">
+                    <a href="mailto:your@email.com" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Send An Email
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/tatheer-ul-hassan/" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Follow On Linkedin
+                    </a>
+                    
+                    <a href="#" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+                
+                <hr class="footer-divider">
+        
+                <div class="footer-bottom">
+                    <div class="footer-nav">
+                         <a href="about.html">About Me</a>
+                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
+                <a href="https://www.behance.net/tatheerulhassan">Behance</a>
+                <a href="mailto:tatheerulhassan799@gmail.com">Contact</a>
+                    </div>
+                    <p class="footer-copy">&copy; 2026 Tatheer. Designed And Built By Me.</p>
+                </div>
+                
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

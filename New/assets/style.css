@@ -1,0 +1,1511 @@
+/* ==================================================
+   CSS Variables & Reset
+   ================================================== */
+:root {
+    /* Colors */
+    --primary-blue: #638CFF;
+    --blue-light-bg: #E8EEFF;
+    --blue-border: #BCCEFF;
+    --text-dark: #1A1A1A;
+    --text-gray: #333333;
+    --bg-color: #FAFAFB;
+    --logo-dot: #FFC107;
+    
+    /* Grid Settings from Figma */
+    --margin: 120px;
+    --gutter: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Recoleta Font Setup */
+@font-face {
+    font-family: 'Recoleta';
+    /* Update this path to match your exact file name */
+    src: url('./assets/fonts/Recoleta-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Recoleta-Regular.otf') format('truetype');
+    font-weight: 400; /* 400 is standard for Regular */
+    font-style: normal;
+}
+
+/* ==================================================
+   Layout Grid System
+   ================================================== */
+.page-wrapper {
+    /* Kept your 120px margins but reduced top padding */
+    padding: 32px var(--margin); 
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--gutter);
+}
+
+/* ==================================================
+   Navigation (Desktop)
+   ================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-dark);
+    text-decoration: none;
+    flex: 1;
+}
+
+.logo span {
+    color: var(--logo-dot);
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.header-action {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary-blue);
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+/* ==================================================
+   Mobile Menu Styles (Hidden on Desktop)
+   ================================================== */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hides the menu off-screen to the right */
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    transition: right 0.3s ease; /* Smooth slide-in effect */
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu.active {
+    right: 0; /* Slides the menu in when the 'active' class is added via JS */
+}
+
+.close-btn {
+    font-size: 36px;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+    margin-bottom: 32px;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile-nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mobile-btn {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* ==================================================
+   Hero Section
+   ================================================== */
+.hero-content {
+    /* Spans 7 columns on desktop */
+    grid-column: 1 / 8; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.badge {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-family: 'Recoleta', serif; 
+    color: var(--primary-blue);
+    font-size: 46px; 
+    font-weight: 400; 
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px; 
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+/* ==================================================
+   Buttons Area
+   ================================================== */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn-primary-wrapper {
+    background-color: var(--blue-light-bg);
+    padding: 8px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-play {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--blue-border);
+    padding: 6px 24px 6px 6px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 16px;
+    font-weight: 400;
+    transition: background 0.2s;
+}
+
+.btn-play:hover {
+    background-color: rgba(99, 140, 255, 0.05);
+}
+
+.play-icon {
+    background-color: var(--primary-blue);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+/* ==================================================
+   Hero Artwork (Image)
+   ================================================== */
+.hero-image {
+    grid-column: 8 / 13; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-artwork {
+    width: 100%;
+    height: auto;
+    max-height: 700px; 
+    object-fit: contain; 
+}
+
+/* =========================================
+   BRANDS SECTION
+========================================= */
+.brands-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 5% 60px; 
+    text-align: center;
+}
+
+.brands-title {
+    font-family: 'Recoleta', serif; /* Change to 'Recoleta' if you linked it! */
+    font-size: 36px; /* Scaled up to match the design */
+    font-weight: 400;
+    color: #192131; /* Warm dark brown/charcoal from your design */
+    margin-bottom: 48px; /* More space before the logos */
+}
+
+.brands-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px; /* Slightly wider gap */
+}
+
+.brand-item {
+    background-color: #FFFFFF; /* Pure white cards matching the design */
+    border-radius: 16px; /* Soft rounded rectangles, not full pills */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 80px; /* Taller height for the rectangle look */
+    padding: 0 32px; 
+    
+    flex: 1 1 0; 
+    min-width: 160px;
+    max-width: 240px;
+}
+
+.brand-item img {
+    max-width: 100%;
+    max-height: 36px; /* Slightly larger logos */
+    width: auto;
+    object-fit: contain;
+    display: block; 
+    /* Removed opacity so they match the solid look in your mockup */
+}
+
+.and-more {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 32px;
+}
+
+/* ==================================================
+   Mobile Responsiveness (Phones & Small Tablets)
+   ================================================== */
+@media (max-width: 768px) {
+    
+    .page-wrapper {
+        padding: 24px 20px; 
+    }
+
+    header {
+        margin-bottom: 60px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Hide the desktop header items */
+    .nav-links, .header-action {
+        display: none; 
+    }
+    
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block; 
+    }
+
+    /* Keep the logo on the left */
+    .logo {
+        text-align: left;
+        flex: none;
+    }
+
+    /* Break the grid */
+    .grid-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Center text */
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Typography scaling */
+    h1 {
+        font-size: 32px; 
+        margin-bottom: 16px;
+    }
+
+    .description {
+        font-size: 15px; 
+        max-width: 100%; 
+        margin-bottom: 32px;
+    }
+
+    .badge {
+        margin-bottom: 24px;
+    }
+
+    /* Button scaling */
+    .action-buttons {
+        flex-direction: column; 
+        width: 100%;
+        gap: 16px;
+    }
+
+    .btn-primary-wrapper, .btn-play {
+        width: 100%;
+        max-width: 280px; 
+        justify-content: center; 
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    /* Hide the image completely on mobile */
+    .hero-image {
+        display: none; 
+    }
+}
+
+/* =========================================
+   BRANDS SECTION - MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    .brands-section {
+        padding: 40px 5%; /* Reduces top and bottom spacing */
+    }
+
+    .brands-title {
+        font-size: 28px; /* Scales down the title for smaller screens */
+        margin-bottom: 32px;
+    }
+
+    .brands-grid {
+        gap: 16px; /* Tightens the gap between the logo cards */
+    }
+
+    .brand-item {
+        /* Forces exactly 2 logos per row by taking up 50% width minus the gap */
+        flex: 0 0 calc(50% - 8px); 
+        height: 60px; /* Makes the boxes slightly shorter on mobile */
+        padding: 0 16px; /* Reduces the side padding so logos have room */
+        min-width: unset; /* Removes the desktop minimum width */
+        max-width: unset; /* Removes the desktop maximum width */
+    }
+
+    .brand-item img {
+        max-height: 28px; /* Scales the logos down slightly to fit the new box size */
+    }
+
+    .and-more {
+        margin-top: 24px; /* Pulls the bottom text up a bit */
+    }
+}
+
+
+/* =========================================
+   MORE WORK SECTION (List Layout)
+========================================= */
+.more-work-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 5% 120px;
+}
+
+.mw-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.mw-title-blue {
+    font-family: 'Recoleta', serif;
+    font-size: 46px; 
+    font-weight: 400;
+    color: var(--primary-blue, #638CFF); /* Using your primary blue */
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.mw-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333; /* Darker grey as shown in your design */
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Row Layout container */
+.mw-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Large space between each project row */
+}
+
+.mw-row {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Space between image and text */
+}
+
+/* Image Column */
+.mw-image-col {
+    flex: 1.1; /* Gives the image slightly more room than the text */
+}
+
+.mw-main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Soft rounding like the design */
+    display: block;
+}
+
+/* Text/Details Column */
+.mw-details-col {
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mw-client-logo {
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.mw-project-title {
+    font-family: 'inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+}
+
+.mw-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.mw-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 50px;
+    /* Currentcolor inherits the exact border color from the brand classes below */
+    border: 1px solid currentColor; 
+    background-color: transparent;
+}
+
+.mw-project-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+}
+
+.mw-arrow-link {
+    align-self: flex-end; /* Pushes the arrow to the bottom right */
+    color: #1a1a1a;
+    transition: transform 0.2s ease;
+}
+
+.mw-arrow-link:hover {
+    transform: translateX(8px); /* Little slide right on hover */
+}
+
+.mw-arrow-link svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Brand Custom Colors for Titles and Tags */
+.brand-orange { color: #D46A41; }
+.brand-purple { color: #584ACB; }
+.brand-blue   { color: #007CE3; }
+.brand-green  { color: #22996E; }
+
+/* =========================================
+   MORE WORK - MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    .more-work-section {
+        padding: 60px 5% 80px;
+    }
+    
+    .mw-title-blue {
+        font-size: 36px;
+    }
+    
+    .mw-list {
+        gap: 80px; /* Slightly tighter space between projects on mobile */
+    }
+
+    .mw-row {
+        flex-direction: column; /* Stack image on top, text on bottom */
+        gap: 32px;
+    }
+    
+    .mw-image-col, .mw-details-col {
+        width: 100%; /* Forces both to take full width */
+    }
+    
+    .mw-project-title {
+        font-size: 26px;
+    }
+    
+    .mw-client-logo {
+        height: 28px;
+    }
+}
+
+/* =========================================
+   ABOUT ME SECTION
+========================================= */
+.about-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 5% 120px;
+}
+
+.about-title-blue {
+    font-family: 'Recoleta', serif;
+    font-size: 46px;
+    font-weight: 400;
+    color: var(--primary-blue, #638CFF); /* Using your blue variable */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* The Solid White Card */
+.about-card-white {
+    background-color: #FFFFFF; 
+    border-radius: 24px;
+    padding: 48px 60px;
+    /* Optional: very subtle shadow if your page background is solid white instead of grey */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03); 
+}
+
+.about-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.about-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Rounded square profile picture */
+.profile-img-rounded {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px; /* Soft corners instead of a full circle */
+    object-fit: cover;
+    background-color: #d5d5d5; 
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile-name-blue {
+    font-family: 'Recoleta', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--primary-blue, #638CFF);
+    margin: 0;
+}
+
+.profile-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #444;
+    margin: 0;
+}
+
+/* Blue "Creative" Tag */
+.about-tag-blue {
+    background-color: var(--primary-blue, #638CFF);
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin: 0; 
+}
+
+/* Paragraph Formatting */
+.about-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Space between paragraphs */
+}
+
+.about-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #444; /* Dark grey for readability */
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* =========================================
+   ABOUT ME - MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 5% 80px;
+    }
+    
+    .about-title-blue {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    
+    .about-card-white {
+        padding: 32px 24px; /* Shrinks the padding for mobile screens */
+    }
+    
+    .about-card-header {
+        flex-direction: column; /* Stacks the profile and the tag */
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+    
+    /* Move the tag so it sits nicely under the profile info on mobile */
+    .about-tag-blue {
+        align-self: flex-start; 
+    }
+    
+    .profile-img-rounded {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+    }
+    
+    .profile-name-blue {
+        font-size: 22px;
+    }
+    
+    .about-text {
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   FOOTER / CONTACT SECTION
+========================================= */
+.site-footer {
+    background-color: #1A2530; /* Matches the dark slate blue in your mockup */
+    padding: 100px 5% 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-subtitle {
+    font-family: 'Recoleta', serif;
+    font-size: 24px;
+    color: #e2e8f0;
+    margin-bottom: 12px;
+}
+
+.footer-title {
+    font-family: 'Recoleta', serif;
+    font-size: 56px; 
+    font-weight: 400;
+    margin: 0 0 32px 0;
+    letter-spacing: -0.5px;
+}
+
+.footer-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #7A90A4; /* Muted slate blue-grey text */
+    line-height: 1.6;
+    margin: 0 auto 48px auto;
+    max-width: 650px;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.btn-footer {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-footer svg {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-footer:hover {
+    background-color: #ffffff;
+    color: #1A2530; /* Flips text to dark slate on hover */
+}
+
+/* Footer Divider & Bottom Links */
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15); /* Slightly more visible thin line */
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7A90A4;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+.footer-copy {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #e2e8f0;
+    margin: 0;
+}
+
+
+/* =========================================
+   FOOTER - MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 80px 5% 60px;
+    }
+    
+    .footer-subtitle {
+        font-size: 20px;
+    }
+
+    .footer-title {
+        font-size: 40px;
+    }
+    
+    .footer-desc {
+        font-size: 16px;
+    }
+    
+    .footer-buttons {
+        flex-direction: column; /* Stack buttons on mobile */
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+    
+    .btn-footer {
+        justify-content: center; /* Centers icon and text */
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .footer-nav {
+        gap: 24px;
+    }
+}
+
+/* =========================================
+   FLOATING LOOM WIDGET (REFINED LIQUID GLASS)
+========================================= */
+.floating-loom-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999; 
+    display: flex;
+    /* CHANGE HERE: This reverses the visual stack */
+    flex-direction: column-reverse; 
+    align-items: flex-end;
+    gap: 12px; 
+}
+
+/* --- True Liquid Glass Effect --- */
+.loom-video-container {
+    width: 260px; /* Scaled down significantly */
+    height: 160px;
+    padding: 10px;
+    border-radius: 24px; /* Much rounder, softer edges */
+    
+    /* 1. Diagonal gradient for liquid/shimmer depth */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+    
+    /* 2. Heavy blur for the frosted look */
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    
+    /* 3. Crisp white outer edge + inner glow */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1), 
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    
+    /* Animation defaults */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px) scale(0.96);
+    transform-origin: bottom right;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* CHANGE HERE: Only trigger when hovering the exact button OR the video box itself */
+.loom-trigger-btn:hover ~ .loom-video-container,
+.loom-video-container:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Dark Grey Video Box inside the glass */
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #4A4A4A;
+    border-radius: 14px;
+    /* Very subtle inner shadow on the video placeholder itself */
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.2); 
+}
+
+.loom-video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    border: none;
+}
+
+/* --- Sleek, Smaller Button --- */
+.loom-trigger-btn {
+    /* Matches the bright, crisp white in your image */
+    background: rgba(250, 250, 252, 0.85); 
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 50px;
+    
+    padding: 6px 20px 6px 6px; /* Tighter padding so it isn't bulky */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap between icon and text */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loom-trigger-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Smaller Purple Play Circle */
+.play-circle {
+    background-color: #6B52FF; /* Matched exactly to your image */
+    width: 36px; /* Scaled down from 48px */
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-circle svg {
+    width: 16px; /* Scaled down */
+    height: 16px;
+    fill: #ffffff;
+    margin-left: 3px; 
+}
+
+/* Crisper, Smaller Text */
+.btn-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; /* Scaled down for a premium look */
+    font-weight: 500; /* Reduced weight so it doesn't look clunky */
+    color: #1a1a1a;
+    text-align: left;
+    line-height: 1.2;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    .floating-loom-widget {
+        bottom: 16px;
+        right: 16px;
+    }
+    .loom-video-container {
+        width: 220px;
+        height: 140px;
+    }
+}
+
+
+/* =========================================
+   CASE STUDY PAGE (Lillup)
+========================================= */
+
+.case-study-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+}
+
+/* Header Section */
+.cs-header {
+    margin-bottom: 60px;
+}
+
+.cs-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-blue, #638CFF);
+    margin: 0 0 8px 0;
+}
+
+.cs-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin: 0 0 24px 0;
+}
+
+/* Tags */
+.cs-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.cs-tag {
+    background-color: #F0F4FF; /* Very light blue/grey */
+    color: #4A5568;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 50px;
+    border: 1px solid #E2E8F0;
+}
+
+/* Description */
+.cs-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Meta Data Grids */
+.cs-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.cs-meta-box, .cs-feature-box {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.cs-feature-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.meta-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-blue, #638CFF);
+}
+
+.meta-value {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4A5568;
+}
+
+/* Play Button Area */
+.feature-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 80px;
+}
+
+.play-circle-lg {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-blue, #638CFF);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.play-circle-lg:hover {
+    transform: scale(1.05);
+}
+
+.play-icon-triangle {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 4px; /* Center visual balance */
+}
+
+.play-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4A5568;
+}
+
+/* Jump Links */
+/* Jump Links Updated */
+.cs-jump-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Slightly increased gap for breathing room */
+    width: 100%; /* Ensures the container takes full width */
+}
+
+.jump-label {
+    font-size: 14px;
+    color: var(--primary-blue, #638CFF);
+}
+
+.jump-pills {
+    display: flex;
+    gap: 16px; /* Space between the buttons */
+    width: 100%;
+}
+
+.jump-pills a {
+    flex: 1; /* This is the magic property that makes them stretch evenly! */
+    text-align: center; /* Centers the text inside the stretched button */
+    text-decoration: none;
+    color: #4A5568;
+    font-size: 14px; /* Bumped up slightly for the wider buttons */
+    font-weight: 500;
+    padding: 12px 20px; /* Made them slightly taller to match the stretched width */
+    border-radius: 50px;
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0; /* Added a subtle border to match the design */
+    transition: all 0.2s ease;
+}
+
+.jump-pills a:hover {
+    background-color: var(--primary-blue, #F2F8FF);
+    color: #fff;
+    border-color: var(--primary-blue, #F2F8FF);
+}
+
+/* Case Study Body Sections */
+.cs-body {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Space between sections */
+}
+
+.cs-section h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-blue, #638CFF);
+    margin: 0 0 16px 0;
+}
+
+.cs-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin: 0 0 24px 0;
+}
+
+.cs-section ul {
+    padding-left: 20px;
+    margin: 0 0 24px 0;
+    color: #333;
+}
+
+.cs-section li {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.cs-section li strong {
+    color: #1A1A1A;
+}
+
+/* Images */
+.cs-img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.border-img {
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+}
+
+.bg-grey {
+    background-color: #F8FAFC;
+    padding: 20px;
+}
+
+.img-large-margin {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.cs-images-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/* Mobile Responsiveness for Case Study */
+@media (max-width: 768px) {
+    .cs-title {
+        font-size: 36px;
+    }
+    .cs-subtitle {
+        font-size: 20px;
+    }
+    .cs-meta-grid {
+        grid-template-columns: 1fr; /* Stack meta info on mobile */
+    }
+    .cs-feature-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .feature-play {
+        align-self: flex-start;
+        margin-top: 16px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .cs-images-2col {
+        grid-template-columns: 1fr; /* Stack images on mobile */
+    }
+}
+
+/* =========================================
+   CASE STUDY - MOBILE RESPONSIVENESS
+========================================= */
+@media (max-width: 768px) {
+    /* Typography Scaling */
+    .cs-title {
+        font-size: 32px;
+    }
+    .cs-subtitle {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .cs-section h3 {
+        font-size: 24px;
+    }
+
+    /* Force the 3-column inline grid to stack into 1 column */
+    .cs-meta-grid[style] {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+
+    /* Keep text inside meta boxes neatly left-aligned */
+    .cs-meta-box {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* Stack the Core Focus text and the Play Button */
+    .cs-feature-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    /* Turn the play button into a horizontal layout for better mobile scanning */
+    .feature-play {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    /* Stack the jump links to make them easy, full-width tap targets */
+    .cs-jump-links {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .jump-pills {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .jump-pills a {
+        width: 100%;
+        /* Keeping the text inside the button centered is fine for touch targets */
+        text-align: center; 
+    }
+
+    /* Give images a bit more breathing room on small screens */
+    .img-large-margin {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    /* Ensure the custom bulb lists don't break width constraints */
+    div[style*="max-width: 850px;"] {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 40px !important;
+    }
+}
+
+
+/* ==================================================
+   Ecosystem Deep-Dive Layout System
+   ================================================== */
+.cs-eco-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px; /* Uniform generous gaps between layout case records */
+    margin-top: 40px;
+}
+
+.cs-eco-row {
+    display: grid;
+    grid-template-columns: 4.5fr 7.5fr; /* Tight description lane / generous layout viewport width */
+    gap: 40px;
+    align-items: center; /* Balanced vertical axis center points */
+}
+
+.cs-eco-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-blue, #638CFF);
+    margin-bottom: 14px;
+    line-height: 1.3;
+}
+
+.cs-eco-text p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-gray, #333333);
+    margin: 0;
+}
+
+/* Ensure the layout graphics sit nicely inside containers */
+.cs-eco-media img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    width: 100%;
+    height: auto;
+}
+
+/* ==================================================
+   Ecosystem Mobile Responsiveness Overrides
+   ================================================== */
+@media (max-width: 768px) {
+    .cs-eco-container {
+        gap: 56px;
+    }
+
+    .cs-eco-row {
+        grid-template-columns: 1fr; /* Stacks layout elements cleanly */
+        gap: 18px;
+    }
+    
+    .cs-eco-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ==================================================
+   Impact Metrics & Reflection Styles
+   ================================================== */
+.cs-impact-subheading {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-dark, #1A1A1A);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.cs-metrics-list {
+    list-style-type: disc;
+    padding-left: 24px;
+    margin-bottom: 48px;
+}
+
+.cs-metrics-list li {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text-dark, #1A1A1A);
+    margin-bottom: 16px;
+}
+
+.cs-metrics-list li strong {
+    color: var(--text-dark, #1A1A1A);
+    font-weight: 700;
+}
+
+/* Responsive adjustments for mobile text readability */
+@media (max-width: 768px) {
+    .cs-impact-subheading {
+        font-size: 19px;
+        margin-top: 32px;
+    }
+    
+    .cs-metrics-list li {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+}

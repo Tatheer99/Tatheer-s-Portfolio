@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Sidebar Redesign - Tatheer</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <div class="portfolio-wrapper">
+        
+        <header class="nav-header">
+            <div class="nav-logo">
+    <a href="index.html">Tatheer<span class="accent-dot">.</span></a>
+</div>
+            
+            <nav class="nav-center-links">
+                <a href="about.html">About Me</a>
+                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
+            </nav>
+            
+            <div class="nav-action">
+                <a href="mailto:tatheerulhassan799@gmail.com" class="btn-talk">Let's Talk &rarr;</a>
+            </div>
+        </header>
+
+        <section class="cs-hero-section">
+            <div class="cs-hero-content">
+                
+                
+                <div class="cs-hero-tags">
+                    <span class="status-pill cs-pill-dark">UX Case Study</span>
+                    <span class="status-pill cs-pill-dark">UI Redesign</span>
+                </div>
+                
+                <h1 class="cs-hero-title">WordPress<br>Sidebar Redesign</h1>
+                
+                <p class="cs-hero-subtitle">For Plugin-Heavy Sites</p>
+                
+                <div class="cs-hero-meta">
+                    <div class="meta-box">
+                        <span class="meta-label">My Role</span>
+                        <span class="meta-value">Ux UI Designer</span>
+                    </div>
+                    <div class="meta-box">
+                        <span class="meta-label">Project Duration</span>
+                        <span class="meta-value">3 Days</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="cs-hero-visual">
+                <img src="assets/img/word/h.png" alt="WordPress Sidebar UI Redesign" class="cs-hero-img">
+            </div>
+        </section>
+        <section class="cs-quick-nav-section">
+            <span class="quick-nav-label">Jump to section:</span>
+            <nav class="quick-nav-links">
+                <a href="#overview" class="nav-pill">Overview</a>
+                <a href="#research" class="nav-pill">Research & Data</a>
+                <a href="#personas" class="nav-pill">Persona</a>
+                <a href="#designs" class="nav-pill">Final Designs</a>
+                <a href="#takeaways" class="nav-pill">Takeaways</a>
+            </nav>
+        </section>
+
+        <section class="cs-intro-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Introduction</h2>
+                <p class="cs-body-text">
+                    WordPress is the world's most widely used content management system, 
+                    powering millions of websites across blogs, businesses, and large-scale platforms. 
+                    Its flexible plugin ecosystem allows users to extend functionality easily, but this 
+                    flexibility can also introduce usability challenges within the admin experience—
+                    especially for sites that rely on many plugins.
+                </p>
+            </div>
+        </section>
+
+        <section id="overview" class="cs-glance-section">
+            <h2 class="cs-section-title">At A Glance</h2>
+            
+            <div class="glance-content">
+                <h3 class="glance-subtitle">The Problem</h3>
+                <p class="cs-body-text">Plugin-heavy WordPress sites suffer from a cluttered wp-admin sidebar where plugins add inconsistent top-level menu items, making navigation hard to scan and time-consuming.</p>
+                
+                <h3 class="glance-subtitle">Goal</h3>
+                <p class="cs-body-text">Improve navigation clarity and speed by reducing sidebar clutter while keeping the familiar WordPress admin experience intact.</p>
+                
+                <h3 class="glance-subtitle">Solution</h3>
+                <p class="cs-body-text">Introduce a single Plugins hub with categorized plugin settings and a Pinned section for frequently used tools, without changing WordPress's visual style.</p>
+            </div>
+        </section>
+
+        <section id="designs" class="cs-visuals-section">
+            <h2 class="cs-section-title">The New Sidebar</h2>
+            
+            <div class="cs-visual-row-single">
+                <img src="assets/img/word/1.png" alt="The New Sidebar with Quick Access Annotations" class="cs-full-img">
+            </div>
+            
+            <div class="cs-visual-row-single" style="margin-top: 100px;">
+                <img src="assets/img/word/2.png" alt="Zoomed Plugins Menu with Annotations" class="cs-full-img" style="max-width: 800px; display: block; margin: 0 auto;">
+            </div>
+            
+        </section>
+
+        <section class="cs-visuals-section">
+            
+            <div class="cs-visual-row-grid">
+                <div class="visual-col">
+                    <h4 class="visual-label">Collapsed</h4>
+                    <!-- Added inline max-width and centering -->
+                    <img src="assets/img/word/3.png" alt="Collapsed Sidebar View" class="cs-grid-img" style="max-width: 250px; margin: 0 auto; display: block;">
+                </div>
+                <div class="visual-col">
+                    <h4 class="visual-label">Expanded</h4>
+                    <!-- Added inline max-width and centering -->
+                    <img src="assets/img/word/4.png" alt="Expanded Sidebar View" class="cs-grid-img" style="max-width: 250px; margin: 0 auto; display: block;">
+                </div>
+            </div>
+
+            <div style="height: 100px;"></div>
+
+            <div class="cs-visual-row-grid">
+                <div class="visual-col">
+                    <h4 class="visual-label">Before</h4>
+                    <img src="assets/img/word/5.png" alt="Original Cluttered Sidebar" class="cs-grid-img" style="max-width: 250px; margin: 0 auto; display: block;">
+                </div>
+                <div class="visual-col">
+                    <h4 class="visual-label">After</h4>
+                    <img src="assets/img/word/6.png" alt="Clean Redesigned Sidebar" class="cs-grid-img" style="max-width: 250px; margin: 0 auto; display: block;">
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="takeaways" class="cs-text-section cs-takeaways-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Impact & Result</h2>
+                <p class="cs-body-text">
+                    This redesign demonstrates how improving information architecture can 
+                    make the WordPress admin sidebar easier to scan, faster to navigate, and 
+                    more predictable for plugin-heavy sites. While this is a conceptual solution, 
+                    it highlights clear ways to declutter, reduce friction, support power-user 
+                    workflows, and scale better as plugins accumulate, setting a strong 
+                    foundation for further testing and iteration.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <h2 class="cs-section-title left-align">Overview</h2>
+            <p class="cs-body-text left-align">
+                WordPress allows plugins to add their own top-level menu items in the admin sidebar, which often results in long, inconsistent, and hard-to-scan navigation—especially on sites with many plugins installed. Over time, this clutter increases cognitive load, slows down common tasks, and causes users to hunt for settings or click the wrong items.
+            </p>
+            <p class="cs-body-text left-align">
+                This matters because power users and designers spend hours inside wp-admin daily; even small inefficiencies compound into real productivity loss and frustration.
+            </p>
+            <p class="cs-body-text left-align">
+                <strong>Constraints:</strong> Desktop only. Scope limited strictly to the left sidebar/navigation. The visual style and interaction patterns of WordPress were preserved to avoid breaking familiarity. This is a conceptual UX redesign with no plugin-level code changes.
+            </p>
+            <p class="cs-body-text left-align">
+                <strong>My role:</strong> UX Designer - research, information architecture, interaction design, and usability validation.
+            </p>
+        </section>
+
+        <section id="research" class="cs-text-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Problem Statement</h2>
+                <p class="cs-body-text">
+                    In WordPress admin, plugins can freely add top-level sidebar menu items, leading 
+                    to a long and inconsistent navigation structure. As more plugins are installed, the 
+                    sidebar becomes harder to scan and predict. Users struggle to remember where 
+                    plugin settings live and often misclick or waste time searching. The lack of 
+                    structure reduces navigation clarity and overall efficiency for plugin-heavy sites.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <h2 class="cs-section-title left-align">Goals & Metrics</h2>
+            
+            <h3 class="glance-subtitle left-align">Goals</h3>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0;">
+                <li>Improve scannability and predictability of the wp-admin sidebar</li>
+                <li>Reduce time spent searching for plugin settings</li>
+                <li>Help users focus on frequently used tools first</li>
+            </ul>
+
+            <h3 class="glance-subtitle left-align" style="margin-top: 40px;">Success Metrics</h3>
+            <ul class="cs-bullet-list left-align" style="margin-left: 0;">
+                <li>Reduced time-to-find common plugin settings</li>
+                <li>Fewer misclicks or back-tracking events</li>
+                <li>Higher perceived ease-of-use (post-task rating)</li>
+            </ul>
+        </section>
+
+        <section class="cs-text-section">
+            <div class="about-card">
+                <div class="cs-visual-row-grid">
+                    <div class="visual-col left-align">
+                        <h3 class="glance-subtitle">Scope & Constraint</h3>
+                        <ul class="cs-bullet-list left-align" style="margin-top: 16px; margin-left: 0;">
+                            <li>Desktop wp-admin sidebar only</li>
+                            <li>Navigation and information architecture focus</li>
+                            <li>Native WordPress UI style preserved</li>
+                            <li>Conceptual redesign (no or minimal plugin code changes)</li>
+                            <li>Auto-categorization where possible</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="visual-col left-align">
+                        <h3 class="glance-subtitle">Out of Scope</h3>
+                        <ul class="cs-bullet-list left-align" style="margin-top: 16px; margin-left: 0;">
+                            <li>Mobile admin experience</li>
+                            <li>Full dashboard redesign</li>
+                            <li>Gutenberg or content editor changes</li>
+                            <li>Plugin developer UI redesigns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Desk Research</h2>
+                <p class="cs-body-text">
+                    Many WordPress and Reddit discussions highlight admin clutter as a pain point on 
+                    plugin-heavy sites, especially for freelancers managing multiple projects. 
+                    Plugins add random top-level menu items, resulting in inconsistent naming and 
+                    placement across installs.
+                </p>
+                <p class="cs-body-text">
+                    Power users rely heavily on muscle memory; shifting or bloated menus slow task 
+                    completion.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-visuals-section" style="padding-top: 0;">
+            <div class="cs-visual-row-single">
+                <img src="assets/img/word/7.png" alt="Reddit and Community Discussion Screenshots" class="cs-full-img" style="max-width: 900px;">
+            </div>
+        </section>
+
+        <section class="cs-text-section" style="padding-top: 0;">
+            <h2 class="cs-section-title left-align">Interview Outcome</h2>
+            <p class="cs-body-text left-align">
+                After completing desk research and noticing recurrent complaints about wp-admin sidebar clutter across Reddit and WordPress community discussions, I conducted five interviews with WordPress users collected from these spaces. While interviews were not initially planned, the consistency of feedback prompted me to validate assumptions directly with end users. The interviews reinforced the need for a more structured and predictable sidebar experience for plugin-heavy sites.
+            </p>
+        </section>
+
+        <section class="cs-text-section" style="padding-top: 0;">
+            <div class="about-card">
+                <h3 class="glance-subtitle left-align" style="margin-top: 0;">Key Insights</h3>
+                <ul class="cs-bullet-list left-align" style="margin-top: 16px; margin-left: 0; max-width: 100%;">
+                    <li>Users struggle to scan and remember plugin locations in long sidebars</li>
+                    <li>Inconsistent plugin naming and placement breaks navigation confidence</li>
+                    <li>Faster access to frequently used plugins is more valuable than more menu items</li>
+                </ul>
+
+                <h3 class="glance-subtitle left-align" style="margin-top: 40px;">Evidence</h3>
+                <ul class="cs-bullet-list left-align" style="margin-top: 16px; margin-left: 0; max-width: 100%;">
+                    <li>All 5 participants mentioned frequently used plugins deserve faster access</li>
+                    <li>4/5 participants mentioned spending extra time "searching" for plugin settings</li>
+                    <li>3/5 participants reported misclicking or opening the wrong menu item at least once per session</li>
+                    <li>Direct feedback includes: "I know the plugin is there, I just don't remember where it is placed."</li>
+                    <li>WordPress discussions and Reddit threads were filled with recurring complaints about WordPress admin clutter and plugin menus growing out of control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Jobs to be done</h2>
+                <p class="cs-body-text">
+                    When managing a plugin-heavy WordPress site, I want to find plugin settings 
+                    quickly so I can complete tasks without hunting through the sidebar.
+                </p>
+                <p class="cs-body-text" style="margin-bottom: 0;">
+                    When I frequently use certain plugins, I want faster access to them so I can avoid 
+                    repeated scanning and misclicks.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-text-section" style="padding-top: 0;">
+            <div class="cs-empathy-visual">
+                <img src="assets/img/word/8.png" alt="User Empathy Map Breakdown" class="cs-full-img">
+            </div>
+        </section>
+
+        <section class="cs-text-section cs-design-phase" style="padding-bottom: 40px;">
+            <div class="cs-visual-row-grid">
+                <div class="visual-col">
+                    <img src="assets/img/word/9.png" alt="Initial Concept Sketch 1" class="cs-grid-img" style="border-radius: 8px;">
+                </div>
+                <div class="visual-col">
+                    <img src="assets/img/word/10.png" alt="Initial Concept Sketch 2" class="cs-grid-img" style="border-radius: 8px;">
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-text-section cs-user-needs-section" style="border-top: 1px solid #E2E8F0; padding-top: 60px; margin-top: 40px;">
+            <h2 class="cs-section-title left-align" style="margin-bottom: 32px;">User Needs</h2>
+            
+            <ul class="cs-arrow-list">
+                <li>
+                    <span class="arrow-icon">&rarr;</span>
+                    <p class="cs-body-text" style="margin: 0;">Clear and predictable navigation in the wp-admin sidebar</p>
+                </li>
+                <li>
+                    <span class="arrow-icon">&rarr;</span>
+                    <p class="cs-body-text" style="margin: 0;">Faster access to frequently used plugin settings</p>
+                </li>
+                <li>
+                    <span class="arrow-icon">&rarr;</span>
+                    <p class="cs-body-text" style="margin: 0;">Reduced cognitive load when scanning the menu</p>
+                </li>
+                <li>
+                    <span class="arrow-icon">&rarr;</span>
+                    <p class="cs-body-text" style="margin: 0;">A structure that scales as more plugins are installed</p>
+                </li>
+                <li>
+                    <span class="arrow-icon">&rarr;</span>
+                    <p class="cs-body-text" style="margin: 0;">Familiar WordPress experience without relearning</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cs-text-section">
+            <div class="intro-box cs-solution-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title">Solution</h2>
+                <p class="cs-body-text">
+                    Based on desk research, Reddit discussions, and five user interviews, the solution 
+                    focuses on improving navigation clarity rather than changing WordPress's visual 
+                    design. All plugin-related menu items are consolidated into a single Plugins hub, 
+                    reducing sidebar clutter and improving scannability. Plugins are grouped into 
+                    logical categories, while frequently used tools can be pinned for quick access. This 
+                    structure creates a more predictable, scalable sidebar that supports power-user 
+                    workflows without breaking familiar WordPress admin patterns.
+                </p>
+            </div>
+        </section>
+
+        <section id="personas" class="cs-text-section cs-personas-section">
+            <h2 class="cs-section-title">Personas</h2>
+
+            <div class="persona-block">
+                <h3 class="persona-main-title">User Persona-1</h3>
+                
+                <div class="persona-content">
+                    
+                    <div class="persona-sidebar">
+                        <div class="persona-profile">
+                            <img src="assets/img/word/11.png" alt="Ali Khan" class="persona-avatar">
+                            <h4 class="persona-name">Ali Khan</h4>
+                            <p class="persona-role">Freelance WordPress Designer</p>
+                        </div>
+
+                        <div class="persona-about">
+                            <h5 class="persona-sub-label">About</h5>
+                            <div class="about-grid">
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    <span>22</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>New York</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                                    <span>CS</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                                    <span>Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="persona-maslow">
+                            <h5 class="persona-sub-label">Maslow Pyramid</h5>
+                            <img src="assets/img/16.png" alt="Maslow Pyramid pointing to Esteem" class="maslow-img">
+                        </div>
+                    </div>
+
+                    <div class="persona-details">
+                        <h5 class="persona-sub-label">Description</h5>
+                        <p class="cs-body-text">
+                            Ali builds and maintains WordPress sites for clients. He installs SEO, 
+                            performance, security, and page builder plugins on almost every project 
+                            and spends hours inside wp-admin daily. Speed and predictability 
+                            matter more to him than customization.
+                        </p>
+
+                        <h5 class="persona-sub-label mt-40">Pain points</h5>
+                        <ul class="cs-bullet-list persona-bullets">
+                            <li>Too many plugin menu items clutter the sidebar</li>
+                            <li>Inconsistent placement breaks muscle memory</li>
+                            <li>Wastes time searching for plugin settings</li>
+                        </ul>
+
+                        <div class="persona-quote-box">
+                            <div class="quote-icon">“</div>
+                            <p class="quote-text">
+                                I know what I need to open — I just don't remember where the plugin put it.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <hr class="persona-divider">
+
+            <div class="persona-block">
+                <h3 class="persona-main-title">User Persona-2</h3>
+                
+                <div class="persona-content reverse-content">
+                    
+                    <div class="persona-details">
+                        <h5 class="persona-sub-label">Description</h5>
+                        <p class="cs-body-text">
+                            Sara updates content, manages plugins, and adjusts site settings when 
+                            needed. She isn't deeply technical and often feels overwhelmed by the 
+                            admin sidebar as the site grows and more plugins are added.
+                        </p>
+
+                        <h5 class="persona-sub-label mt-40">Pain points</h5>
+                        <ul class="cs-bullet-list persona-bullets">
+                            <li>Long menus feel overwhelming</li>
+                            <li>Unsure where to click for plugin settings</li>
+                            <li>Afraid of opening the wrong option</li>
+                        </ul>
+
+                        <div class="persona-quote-box">
+                            <div class="quote-icon">“</div>
+                            <p class="quote-text">
+                                The sidebar feels messy — I just click until I find the right thing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="persona-sidebar">
+                        <div class="persona-profile">
+                            <img src="assets/img/word/12.png" alt="Sara Ahmed" class="persona-avatar">
+                            <h4 class="persona-name">Sara Ahmed</h4>
+                            <p class="persona-role">Website Admin</p>
+                        </div>
+
+                        <div class="persona-about">
+                            <h5 class="persona-sub-label">About</h5>
+                            <div class="about-grid">
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    <span>22</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>New York</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                                    <span>CS</span>
+                                </div>
+                                <div class="about-item">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                                    <span>Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="persona-maslow">
+                            <h5 class="persona-sub-label">Maslow Pyramid</h5>
+                            <img src="assets/img/16.png" alt="Maslow Pyramid pointing to Esteem" class="maslow-img">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+         <section id="designs" class="cs-text-section">
+            <div class="action-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <h2 class="cs-section-title action-title">Screens in Action</h2>
+
+                <div class="action-quote">
+                    <img src="assets/img/28.png" alt="User" class="action-avatar">
+                    <p class="action-quote-text">
+                        “Small tweaks, big impact—my experience just became smoother and better!”
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-visuals-section" style="padding-top: 0;">
+            <div class="cs-visual-row-single">
+                <img src="assets/img/word/13.png" alt="Dashboard Screen in Action Annotations" class="cs-full-img">
+            </div>
+            
+            <div class="cs-visual-row-single" style="margin-top: 100px;">
+                <img src="assets/img/word/14.png" alt="Sidebar Screen in Action Annotations" class="cs-full-img" style="max-width: 700px; display: block; margin: 0 auto;">
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <div class="about-card">
+                <h3 class="glance-subtitle" style="margin-top: 0;">Reflection</h3>
+                <p class="cs-body-text" style="margin-bottom: 0;">
+                    This case study reaffirmed how small information architecture changes can have a 
+                    large impact on daily workflows, especially for power users. Instead of redesigning the 
+                    entire interface, focusing on structure, predictability, and scale proved more effective. 
+                    Working with real constraints, such as preserving WordPress's existing UI, helped 
+                    shape a solution that feels realistic and implementable. If taken further, this concept 
+                    would benefit from testing with a broader set of WordPress admins and validating 
+                    plugin categories with real usage data.
+                </p>
+            </div>
+        </section>
+
+        <section class="cs-text-section">
+            <h2 class="cs-section-title left-align">Results & Learnings</h2>
+            <p class="cs-body-text left-align">
+                The redesigned sidebar concept demonstrates a clearer and more scalable 
+                navigation model for plugin-heavy WordPress sites. By consolidating plugins into 
+                a single hub and introducing pinning, the solution reduces visual clutter and 
+                supports faster access to frequent tools. This project highlights the importance of 
+                prioritizing recognition over recall and designing systems that grow gracefully as 
+                complexity increases.
+            </p>
+        </section>
+
+        <section class="cs-text-section cs-takeaways-section">
+            <div class="intro-box">
+                <div class="corner-tl"></div>
+                <div class="corner-tr"></div>
+                <div class="corner-bl"></div>
+                <div class="corner-br"></div>
+                
+                <p class="cs-body-text" style="margin: 0; text-align: center; font-weight: 500; font-size: 16px;">
+                    This project proved that improving information architecture, without changing 
+                    visual design, can significantly improve usability. It strengthened my ability to 
+                    work within existing systems, validate assumptions through research, and design 
+                    solutions that scale with real-world complexity.
+                </p>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                
+                <p class="footer-subtitle">Open To Remote Product Design Roles</p>
+                <h2 class="footer-title">Let's Make Something Clear.</h2>
+                
+                <p class="footer-desc">
+                    Open To Remote Product Design Roles And Select Freelance Projects. Based In Pakistan, Working Async-First Across Time Zones.
+                </p>
+        
+                <div class="footer-buttons">
+                    <a href="mailto:your@email.com" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Send An Email
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/tatheer-ul-hassan/" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Follow On Linkedin
+                    </a>
+                    
+                    <a href="#" class="btn-footer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+                
+                <hr class="footer-divider">
+        
+                <div class="footer-bottom">
+                    <div class="footer-nav">
+                         <a href="about.html">About Me</a>
+                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
+                <a href="https://www.behance.net/tatheerulhassan">Behance</a>
+                <a href="mailto:tatheerulhassan799@gmail.com">Contact</a>
+                    </div>
+                    <p class="footer-copy">&copy; 2026 Tatheer. Designed And Built By Me.</p>
+                </div>
+                
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

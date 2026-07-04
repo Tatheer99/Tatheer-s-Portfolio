@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritas Case Study - Tatheer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="index.html">Work</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Resume</a>
+            <a href="#" class="btn-outline mobile-btn">Let's Talk &rarr;</a>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo">Tatheer<span>.</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Work</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Resume</a>
+            </nav>
+            <div class="header-action">
+                <a href="#" class="btn-outline">Let's Talk &rarr;</a>
+            </div>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        </header>
+
+        <main class="case-study-wrapper">
+            
+            <div class="cs-header">
+                
+                <h1 class="cs-title">Veritas — Dual Sided</h1>
+                <h2 class="cs-subtitle">Real Estate Fintech System</h2>
+                
+                <div class="cs-tags">
+                    <span class="cs-tag">0 to 1 Platform Architecture</span>
+                    <span class="cs-tag">Multi-Tenant White-Label Design</span>
+                    <span class="cs-tag">Contract Work</span>
+                </div>
+                
+                <p class="cs-desc">
+                    Real estate sponsors were losing investor trust because complex capital data felt chaotic. Bad layout architecture in fintech looks like financial risk.
+                </p>
+
+                <div class="cs-meta-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    
+                    <div class="cs-meta-box">
+                        <span class="meta-label">My Role</span>
+                        <span class="meta-value">Product Designer</span>
+                    </div>
+                    
+                    <div class="cs-meta-box">
+                        <span class="meta-label">Scope</span>
+                        <span class="meta-value">0 to 1 End-to-End<br>System Architecture</span>
+                    </div>
+                    
+                    <div class="cs-meta-box" style="position: relative;">
+                        <span class="meta-label">Status</span>
+                        <span class="meta-value">Live on Web</span>
+                        <div style="position: absolute; top: 24px; right: 24px; width: 12px; height: 12px; background-color: #4ADE80; border-radius: 50%; box-shadow: 0 0 0 4px #DCFCE7;"></div>
+                    </div>
+
+                </div>
+
+                <div class="cs-feature-box">
+                    <div class="feature-text">
+                        <span class="meta-label">Core Focus</span>
+                        <span class="meta-value">Dual-Sided Portals, White-Label Scaling, & Permission Logic</span>
+                    </div>
+                    <div class="feature-play">
+                        <a href="#" class="play-circle-lg">
+                            <span class="play-icon-triangle">&#9658;</span>
+                        </a>
+                        <span class="play-label" style="text-align: center;">Watch Quick<br>Walkthrough</span>
+                    </div>
+                </div>
+
+                <div class="cs-jump-links">
+                    <span class="jump-label">Jump straight to the section</span>
+                    <div class="jump-pills">
+                        <a href="#overview">Overview</a>
+                        <a href="#system">System Logic</a>
+                        <a href="#ecosystem">The Ecosystem</a>
+                        <a href="#impact">The Impact</a>
+                    </div>
+                </div>
+                
+                <div class="cs-body" style="margin-top: 60px;">
+    
+    <section id="overview" class="cs-section">
+    <h3>Context</h3>
+    <p>Veritas is a complex B2B white-label technology ecosystem connecting institutional real estate sponsors with fractional retail investors. Instead of a isolated dashboard, the product required a dual-engine architecture: a data-heavy administrative management portal for sponsors and a streamlined validation portal for investors. The system translates multi-million dollar investments into digestible, brand-agnostic components.</p>
+</section>
+
+<section id="system" class="cs-section">
+    <h3>System Architecture Scale</h3>
+    
+    <img src="assets/b2b6.png" alt="Veritas Platform Engine Architecture Diagram" class="cs-img-full border-img bg-grey img-large-margin">
+    
+    <p>The design maps out two distinct user frameworks operating on a shared data schema. The sponsor engine handles complex administrative workflows (Soft Commit, Prospects, Distributions), while the investor engine distills that dense data into high-trust touchpoints (Offering, Wallet Connection, Ledger Tracking)</p>
+</section>
+
+<section class="cs-section">
+    <h3>What I Was Working With?</h3>
+    <p>As my first freelance system contract, I backed my design architecture by analyzing 24 raw, multi-audience survey responses alongside qualitative workflow audits of legacy platforms.</p>
+    
+    <img src="assets/b2b1.png" alt="Multi-audience survey response charts" class="cs-img-full img-large-margin">
+    
+    <p style="font-size: 14px; font-weight: 500; color: #1A1A1A;">
+        Data Verification Link: 
+        <a href="#" style="color: #4A5568; text-decoration: none; font-style: italic; font-weight: 400; transition: color 0.2s ease;" onmouseover="this.style.color='#638CFF'" onmouseout="this.style.color='#4A5568'">
+            View the raw response matrix and data visualization charts
+        </a>
+    </p>
+</section>
+
+<section class="cs-section">
+    <p style="font-size: 20px; font-weight: 600; color: #1A1A1A; margin-bottom: 24px;">3 Data-Driven Decisions That Rewrote the Architecture:</p>
+    <ul>
+        <li><strong>The Horizontal Sticky Fix:</strong> 41% of investors lost track of headers on 13-inch laptops due to nested scrolling blocks. I flat-mapped the CSS Grid layout and anchored the primary identity columns horizontally.</li>
+        <li><strong>The Mobile Block Pivot:</strong> 29% of retail users hit clipped rows and broken tables on mobile viewports. I engineered an automated breakpoint system that collapses rigid table rows into individual summary blocks.</li>
+        <li><strong>The 0-Lag Data Summary:</strong> 100% of fund managers hit browser lag and DOM freezes on large desktop data sets. I bypassed client-side rendering bottlenecks by moving full transaction logs into server-side spreadsheet downloads.</li>
+    </ul>
+</section>
+
+<section class="cs-section">
+    <h3>The Workflow Reality</h3>
+    <p>Sponsors were tracking millions by manually matching spreadsheets twice daily and filing compliance milestones in physical paper folders. I unified these fragmented, high-risk tasks into a single real-time data grid backed by instant digital KYC/AML verification statuses.</p>
+</section>
+
+<section class="cs-section">
+    <h3>The System Decision</h3>
+    <p>I killed a multi-nested scroll container layout that looked clean in early desktop concepts.</p>
+    <p>Data-dense financial tables running across the massive Sponsor matrix cause severe DOM performance bottlenecks when forced into deep nested layout structures. I shifted the framework to a flattened, sticky-column CSS Grid architecture that scales across standard viewports and prevents performance lag during heavy client-side table re-rendering.</p>
+</section>
+
+<section class="cs-section">
+    <img src="assets/b2b2.png" alt="Flattened Sticky Framework Dashboard" class="cs-img-full img-large-margin">
+    
+   <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 60px; max-width: 850px; margin-left: auto; margin-right: auto;">
+    
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">I eliminated complex wrapper logic for adaptive vertical scrolls, preventing clipped row errors on 13.5-inch displays.</p>
+    </div>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">Moved filtering logic up the hierarchy to anchor context immediately above the data, avoiding lost list states on reload.</p>
+    </div>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">Synchronized UI states explicitly with backend responses to eliminate blind confirmation states on performance-heavy tables.</p>
+    </div>
+
+</div>
+</section>
+
+<section class="cs-section">
+    <img src="assets/b2b3.png" alt="High-Density Compliance Grid Dashboard" class="cs-img-full img-large-margin">
+    
+    <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 60px; max-width: 850px; margin-left: auto; margin-right: auto;">
+    
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">Mapped compliance identity flags as exact 1:1 visual inputs to server-side checkouts, ensuring zero gap in security status validation.</p>
+    </div>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">Simplified dual-verification interactions down into standard toggle states backed by server-side error states.</p>
+    </div>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div style="width: 28px; height: 28px; background-color: var(--primary-blue, #638CFF); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zM9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1z"/>
+            </svg>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #333; line-height: 1.6;">Removed pagination that requires DB reload, relying instead on cached single-view window scrolling.</p>
+    </div>
+
+</div>
+</section>
+
+<section id="ecosystem" class="cs-section">
+    <h3>The Full System</h3>
+    <p>What you've seen so far is only a small fraction of the final system output. It was built around React and Ant Design standards customized heavily for financial data tables. The final end-to-end multi-tenant product involved 80+ core screens. It fully covers user onboarding, program creation, smart KYC flows, document handling, fund commitment and scaling — all built on a shared system architecture to manage product complexity.</p>
+    
+    <img src="assets/b2b4.png" alt="Veritas Full System Architecture Map" class="cs-img-full bg-grey border-img img-large-margin">
+</section>
+
+<section id="impact" class="cs-section">
+    <h3>What Shipped</h3>
+    <p>This isn't just a UI concept. Veritas is a live, in-production system that relies on the exact architecture I built up to scale. Multiple real estate sponsors rely on this system to run active commitments.</p>
+    
+    <p><strong>Handoff Notes:</strong> I act as the linking bridge between the PM and the frontend engineers. On a fast-paced contract, I structured my deliverables to rely on CSS variables mapped to design system variables in Figma, reducing front-end styling re-work.</p>
+
+    <h4 style="font-size: 18px; font-weight: 600; color: #1A1A1A; margin: 32px 0 16px 0;">If I Measured This Tomorrow</h4>
+    <ul>
+        <li>System Uptime Metrics on complex parameter tables (Goal: 0% Lag across 10k rows loaded).</li>
+        <li>Conversion Metrics for onboarding to 1st fund commitment drop-off rates for retail investors.</li>
+        <li>User Assurance Trust within the core fund views evaluated by KYC/AML help requests.</li>
+    </ul>
+</section>
+
+<section class="cs-section">
+    <h3>What I'd Do Differently</h3>
+    <p>As this was my first massive end-to-end multi-tenant system contract, I initially focused heavily on visual fidelity over logic constraints. To prevent the inevitable frontend edge cases scaling, I needed more direct collaboration with engineers during low-fidelity design. In the future, I validate data mapping tables directly with backend architecture schemas against real-world integration logic.</p>
+</section>
+
+
+            </div>
+
+            <div class="cs-body">
+                </div>
+
+        </main>
+    </div>
+    
+
+     <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-subtitle">Open To Remote Product Design Roles</p>
+            <h2 class="footer-title">Let's Make Something Clear.</h2>
+            <p class="footer-desc">
+                Open To Remote Product Design Roles And Select Freelance Projects. Based In Pakistan, Working Async-First Across Time Zones.
+            </p>
+            <div class="footer-buttons">
+                <a href="mailto:tatheerulhassan799@gmail.com" class="btn-footer">Send An Email</a>
+                <a href="#" class="btn-footer">Follow On Linkedin</a>
+                <a href="#" class="btn-footer">Download Resume</a>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="footer-nav">
+                    <a href="#">About Me</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Contact</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Tatheer. Designed And Built By Me.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-loom-widget">
+        
+        <a href="https://www.youtube.com/watch?v=4IyUEGZV6vw" target="_blank" class="loom-trigger-btn" style="text-decoration: none;">
+            <span class="play-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.286 4.405A1.5 1.5 0 0 0 6 5.612v12.776a1.5 1.5 0 0 0 2.286 1.207l9.828-6.388a1.5 1.5 0 0 0 0-2.414L8.286 4.405z"/>
+                </svg>
+            </span>
+            <span class="btn-text">Watch Video</span>
+        </a>
+
+        <div class="loom-video-container">
+            <iframe 
+                src="your-link&enablejsapi=1&mute=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (hamburgerBtn && closeBtn && mobileMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        }
+
+         /* --- Floating Video Widget JS --- */
+        const triggerBtn = document.getElementById('loom-trigger-btn');
+        const videoContainer = document.getElementById('video-container');
+        const videoIframe = document.getElementById('video-iframe');
+
+        // Make sure it has ?autoplay=1 at the end!
+        const videoURL = "your-linkautoplay=1&mute=1";
+
+        if (triggerBtn && videoContainer && videoIframe) {
+            triggerBtn.addEventListener('click', () => {
+                if (videoContainer.classList.contains('active')) {
+                    videoContainer.classList.remove('active');
+                    videoIframe.src = "";
+                } else {
+                    videoContainer.classList.add('active');
+                    videoIframe.src = videoURL;
+                }
+            });
+        }
+        
+    </script>
+</body>
+</html>
