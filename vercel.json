@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)\\.html",
+      "destination": "/$1",
+      "statusCode": 301
+    }
+  ]
+}
