@@ -3,187 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lillup UX Design - Tatheer</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Lillup Case Study - Tatheer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="portfolio-wrapper">
-        
-        <header class="nav-header">
-            <div class="nav-logo">
-    <a href="index.html">Tatheer<span class="accent-dot">.</span></a>
-</div>
-            
-            <nav class="nav-center-links">
-                <a href="about.html">About Me</a>
-                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="index.html">Work</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Resume</a>
+            <a href="#" class="btn-outline mobile-btn">Let's Talk &rarr;</a>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo">Tatheer<span>.</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Work</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Resume</a>
             </nav>
-            
-            <div class="nav-action">
-                <a href="mailto:tatheerulhassan799@gmail.com" class="btn-talk">Let's Talk &rarr;</a>
+            <div class="header-action">
+                <a href="#" class="btn-outline">Let's Talk &rarr;</a>
             </div>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
         </header>
 
-        <section class="cs-hero-section">
-            <div class="cs-hero-content">
+        <main class="case-study-wrapper">
+            
+            <div class="cs-header">
+                <h1 class="cs-title">Lillup</h1>
+                <h2 class="cs-subtitle">Cross-Platform AI Learning App</h2>
                 
-                <div class="cs-hero-tags">
-                    <span class="status-pill cs-pill-dark">UX Design</span>
-                    <span class="status-pill cs-pill-dark">Mobile & Web</span>
+                <div class="cs-tags">
+                    <span class="cs-tag">Primary Research</span>
+                    <span class="cs-tag">UX Architecture</span>
+                    <span class="cs-tag">System Design</span>
+                    <span class="cs-tag">UI System Library</span>
                 </div>
                 
-                <h1 class="cs-hero-title">UX Designer<br>&mdash; Lillup</h1>
-                
-                <p class="cs-hero-subtitle">End-to-End Product Design</p>
-                
-                <div class="cs-hero-meta">
-                    <div class="meta-box">
+                <p class="cs-desc">
+                    More intuitive scheduling, integrated Voice-to-Text features, improved UI structures overarching all flows. We are modernizing their current setup by introducing an onboarding pathway tailored to various personas, delivering an accessible UI system for all.
+                </p>
+
+                <div class="cs-meta-grid">
+                    <div class="cs-meta-box">
                         <span class="meta-label">My Role</span>
-                        <span class="meta-value">UX Designer</span>
+                        <span class="meta-value">UX/UI Designer</span>
                     </div>
-                    <div class="meta-box">
-                        <span class="meta-label">Duration</span>
-                        <span class="meta-value">1.5 Years</span>
+                    <div class="cs-meta-box">
+                        <span class="meta-label">Primary Deliverable</span>
+                        <span class="meta-value">Complete User Flows, UI System Library, and Onboarding Architecture</span>
                     </div>
                 </div>
+
+                <div class="cs-feature-box">
+                    <div class="feature-text">
+                        <span class="meta-label">Core Feature</span>
+                        <span class="meta-value">Voice-to-Text translation logic, highly responsive voice sorting system and consistent accessibility patterns.</span>
+                    </div>
+                    <div class="feature-play">
+                        <a href="#" class="play-circle-lg">
+                            <span class="play-icon-triangle">&#9658;</span>
+                        </a>
+                        <span class="play-label">Quick Look</span>
+                    </div>
+                </div>
+
+                <div class="cs-jump-links">
+                    <span class="jump-label">Jump to a specific section:</span>
+                    <div class="jump-pills">
+                        <a href="#overview">Overview</a>
+                        <a href="#discovery">Discovery</a>
+                        <a href="#architecture">Architecture</a>
+                        <a href="#prototypes">Prototypes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cs-body">
                 
-            </div>
-
-            <div class="cs-hero-visual">
-                <img src="assets/img/33.png" alt="Lillup UX Design Canvas" class="cs-hero-img">
-            </div>
-        </section>
-
-        <section class="cs-quick-nav-section">
-            <span class="quick-nav-label">Jump to section:</span>
-            <nav class="quick-nav-links">
-                <a href="#introduction" class="nav-pill">Introduction</a>
-                <a href="#responsibilities" class="nav-pill">Responsibilities</a>
-                <a href="#tools" class="nav-pill">Tools & Skills</a>
-                <a href="#work" class="nav-pill">A Glance at Work</a>
-            </nav>
-        </section>
-
-        <section id="introduction" class="cs-intro-section">
-            <div class="intro-box">
-                <div class="corner-tl"></div>
-                <div class="corner-tr"></div>
-                <div class="corner-bl"></div>
-                <div class="corner-br"></div>
-                
-                <h2 class="cs-section-title">Introduction</h2>
-                <p class="cs-body-text">
-                    At Lillup, I worked on end-to-end UX design for a mobile application and 
-                    website, collaborating remotely with cross-functional team members 
-                    through calls & Zoom meetings. I started in an internship capacity and 
-                    transitioned into a UX Designer role, contributing across research, design, 
-                    testing, and delivery phases.
-                </p>
-            </div>
-        </section>
-
-        <section id="responsibilities" class="cs-text-section">
-            <h2 class="cs-section-title">Key Responsibilities & Contributions</h2>
-            
-            <div class="cs-text-center-wrapper">
-                <ul class="cs-bullet-list">
-                    <li>Conducted UX research and user interviews to understand user needs, pain points, and behavior patterns.</li>
-                    <li>Created moodboards to define visual direction and align stakeholders on product tone and style.</li>
-                    <li>Designed user flows covering the complete journey from login and onboarding to dashboards and core features.</li>
-                    <li>Produced sketches, low-fidelity wireframes, and high-fidelity screens for a mobile app.</li>
-                    <li>Developed interactive prototypes for usability testing and validation.</li>
-                    <li>Participated in usability testing, iterating designs based on user feedback and findings.</li>
-                    <li>Designed with accessibility in mind, selecting color palettes suitable for color-blind users and users with visual impairments.</li>
-                    <li>Collaborated closely with team members in daily remote meetings, contributing to design discussions and product decisions.</li>
-                    <li>Delivered initial concept screens as well as refined, production-ready designs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="tools" class="cs-text-section">
-            <h2 class="cs-section-title">Tools & Skills Used</h2>
-            
-            <div class="cs-text-center-wrapper">
-                <p class="cs-body-text">
-                    UX Research, User Interviews, Information Architecture, User Flows, Wireframing, 
-                    Prototyping, Usability Testing, Accessibility-aware Design, Figma, Sketching
-                </p>
-            </div>
-        </section>
-
-        <section id="work" class="cs-text-section cs-screens-section">
-            <h2 class="cs-section-title">A Glance at Work</h2>
-            
-            <div class="cs-text-center-wrapper">
-                <p class="cs-body-text" style="margin-bottom: 60px;">
-                    Due to NDA restrictions, I share a mix of text and blurred copy to demonstrate 
-                    my design process, not final production screens.
-                </p>
-            </div>
-            
-            <div class="screens-stack">
-                <img src="assets/img/34.png" alt="Lillup Wireframes and User Flows" class="cs-full-img">
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <div class="footer-container">
-                
-                <p class="footer-subtitle">Open To Remote Product Design Roles</p>
-                <h2 class="footer-title">Let's Make Something Clear.</h2>
-                
-                <p class="footer-desc">
-                    Open To Remote Product Design Roles And Select Freelance Projects. Based In Pakistan, Working Async-First Across Time Zones.
-                </p>
-        
-                <div class="footer-buttons">
-                    <a href="mailto:your@email.com" class="btn-footer">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        Send An Email
-                    </a>
+                <section id="overview" class="cs-section">
+                    <h3>The Mission</h3>
+                    <p>This client is an educational platform offering grading, file sharing and communication. This project focused on structural layout constraints. Using the material design language we're designing an onboarding pathway customized for different user roles and streamlining the learning experience. We had the authority to establish the core learning interface and standardize components to maintain accessibility benchmarks.</p>
                     
-                    <a href="https://www.linkedin.com/in/tatheer-ul-hassan/" class="btn-footer">
-                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        Follow On Linkedin
-                    </a>
-                    
-                    <a href="#" class="btn-footer">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download Resume
-                    </a>
-                </div>
-        
-                <hr class="footer-divider">
-        
-                <div class="footer-bottom">
-                    <div class="footer-nav">
-                         <a href="about.html">About Me</a>
-                <a href="https://drive.google.com/drive/folders/1OBY17vmBMx1qawPb8vCx4frq-kfj3qSl?usp=sharing">Resume</a>
-                <a href="https://www.behance.net/tatheerulhassan">Behance</a>
-                <a href="mailto:tatheerulhassan799@gmail.com">Contact</a>
+                    <div class="cs-images-2col">
+                        <img src="assets/Lillup1.png" alt="Calendar View 1" class="cs-img-full border-img">
+                        <img src="assets/Lillup2.png" alt="Calendar View 2" class="cs-img-full border-img">
                     </div>
-                    <p class="footer-copy">&copy; 2026 Tatheer. Designed And Built By Me.</p>
-                </div>
-                
+                </section>
+
+                <section id="discovery" class="cs-section">
+                    <h3>The 48-Participant Discovery</h3>
+                    <ul>
+                        <li><strong>Navigation Overload:</strong> Inbound operations documented multiple drop-offs connected to main menu interactions. The testing focused us to merge nested list components into a progressive platform navigation format utilizing bottom sheet components.</li>
+                        <li><strong>Audience Multi-segmentation:</strong> Teachers, administrators, and students act differently across the platform. Primary user paths needed to merge into a single scalable infrastructure to avoid fragmentation and ensure consistent component states.</li>
+                        <li><strong>The hidden primary tags:</strong> Restructuring the primary architecture. Elements representing key navigation utilities on the application required specific visual adjustments to guide the user naturally to the core application.</li>
+                    </ul>
+                    
+                    <img src="assets/Lillup3.png" alt="Dashboard Architecture" class="cs-img-full border-img img-large-margin">
+                </section>
+
+                <section id="architecture" class="cs-section">
+                    <h3>The System Decision</h3>
+                    <p>We wanted a more smooth learning architecture focusing the core interactions into progressive steps. Due to timeline scopes, building out a full design system was excluded initially, relying on standard framework component libraries. Mapping these decisions out visually clarified user pathways and allowed stakeholders to align on delivery logic before committing to high fidelity screens.</p>
+                </section>
+
+                <section class="cs-section">
+                    <h3>Visual Selection & Alignment</h3>
+                    <p>Top requests for general UX UI modifications included a highly adaptable interface that allowed effortless transitions across devices. Research outlined clear metrics for readability, contrast, and custom dashboard layouts depending on user role. Working closely with back-end engineers, we implemented variables across the platform to ensure components functioned adaptively without degrading load times on core devices used by end users.</p>
+                </section>
+
+                <section id="prototypes" class="cs-section">
+                    <h3>System Constraints & Design Reality</h3>
+                    <ul>
+                        <li><strong>The Latency Constraint:</strong> Multiple cross-platform architectures required optimization across screen breakpoints. The front-end team requested minimum nested components to avoid data fetch delays across complex mobile environments.</li>
+                        <li><strong>The Accessibility Foundation:</strong> Maintaining AA contrast ratios for typography components and interactive states. Color palette limits meant relying heavily on spacing, typography weight, and structural layout to communicate application hierarchy rather than visual aesthetics alone.</li>
+                        <li><strong>Cross-Platform Adaptation:</strong> Translating the responsive web architecture into high-fidelity mobile flow screens. Mobile interactions required structural adjustments to tab architectures, native iOS/Android behaviors, and gesture-based navigation logic within the mobile wrapper.</li>
+                    </ul>
+
+                    <div class="cs-images-2col">
+                        <img src="assets/Lillup5.png" alt="Mobile Screens" class="cs-img-full border-img bg-grey">
+                        <img src="assets/Lillup6.png" alt="UI Components" class="cs-img-full border-img bg-grey">
+                    </div>
+                </section>
+
+                <section class="cs-section">
+                    <h3>Future Verification</h3>
+                    <ul>
+                        <li>Month 1 metrics tracking onboarding completion rates across primary segmentations (teachers, students).</li>
+                        <li>Month 2: Drop off recovery during the initial account setup flow.</li>
+                        <li>Month 3: Measuring task completion metrics for the "Learning Module" within 24 hours of registration.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h3>What I'd Do Differently</h3>
+                    <p>Given more time, I would have explored a bit more alternative layout structures for the complex filtering systems in the primary dashboard. As constraints forced us into a specific table format, we sacrificed some initial user customization for immediate delivery.</p>
+                </section>
+
             </div>
-        </footer>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-subtitle">Open To Remote Product Design Roles</p>
+            <h2 class="footer-title">Let's Make Something Clear.</h2>
+            <p class="footer-desc">
+                Open To Remote Product Design Roles And Select Freelance Projects. Based In Pakistan, Working Async-First Across Time Zones.
+            </p>
+            <div class="footer-buttons">
+                <a href="mailto:tatheerulhassan799@gmail.com" class="btn-footer">Send An Email</a>
+                <a href="#" class="btn-footer">Follow On Linkedin</a>
+                <a href="#" class="btn-footer">Download Resume</a>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="footer-nav">
+                    <a href="#">About Me</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Contact</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Tatheer. Designed And Built By Me.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-loom-widget">
+        
+        <a href="https://www.youtube.com/watch?v=4IyUEGZV6vw" target="_blank" class="loom-trigger-btn" style="text-decoration: none;">
+            <span class="play-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.286 4.405A1.5 1.5 0 0 0 6 5.612v12.776a1.5 1.5 0 0 0 2.286 1.207l9.828-6.388a1.5 1.5 0 0 0 0-2.414L8.286 4.405z"/>
+                </svg>
+            </span>
+            <span class="btn-text">Watch Video</span>
+        </a>
+
+        <div class="loom-video-container">
+            <iframe 
+                src="your-link&enablejsapi=1&mute=1" 
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowfullscreen>
+            </iframe>
+        </div>
 
     </div>
 
+    <script>
+        // Mobile Menu Script
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (hamburgerBtn && closeBtn && mobileMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        }
+        /* --- Floating Video Widget JS --- */
+        const triggerBtn = document.getElementById('loom-trigger-btn');
+        const videoContainer = document.getElementById('video-container');
+        const videoIframe = document.getElementById('video-iframe');
+
+        // Make sure it has ?autoplay=1 at the end!
+        const videoURL = "your-linkautoplay=1&mute=1";
+
+        if (triggerBtn && videoContainer && videoIframe) {
+            triggerBtn.addEventListener('click', () => {
+                if (videoContainer.classList.contains('active')) {
+                    videoContainer.classList.remove('active');
+                    videoIframe.src = "";
+                } else {
+                    videoContainer.classList.add('active');
+                    videoIframe.src = videoURL;
+                }
+            });
+        }
+    </script>
 </body>
 </html>
