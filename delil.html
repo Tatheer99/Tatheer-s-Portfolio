@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Delil AI · Tatheer Ul Hassan</title>
+    <meta
+      name="description"
+      content="Structuring a sales workspace where people can browse leads, review details and configure the information they need."
+    />
+    <meta name="theme-color" content="#191b20" />
+    <meta property="og:title" content="Delil AI · Tatheer Ul Hassan" />
+    <meta
+      property="og:description"
+      content="Structuring a sales workspace where people can browse leads, review details and configure the information they need."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="wrap nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Tatheer home"
+          ><strong class="brand-name"
+            >Tatheer<span class="brand-dot">.</span></strong
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="site-menu">
+          <a href="index.html#work">Case studies</a
+          ><a href="index.html#more-work">More work</a
+          ><a href="index.html#thinking">How I think</a
+          ><a
+            class="nav-resume"
+            href="assets/Tatheer-Ul-Hassan-CV.pdf"
+            target="_blank"
+            rel="noopener"
+            >Resume ↗</a
+          ><a class="nav-contact" href="mailto:tatheerulhassan799@gmail.com"
+            >Let’s talk <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <section class="case-hero">
+          <a class="back" href="index.html#work">← All selected work</a>
+          <p class="eyebrow">Delil AI / Lead discovery · CRM workflow</p>
+          <h1>Keep the context close to the lead.</h1>
+          <p class="case-intro">
+            Structuring a sales workspace where people can browse leads, review
+            details and configure the information they need.
+          </p>
+          <dl class="case-meta">
+            <div>
+              <dt>Product</dt>
+              <dd>Lead discovery & CRM</dd>
+            </div>
+            <div>
+              <dt>My focus</dt>
+              <dd>UX/UI · Information architecture</dd>
+            </div>
+            <div>
+              <dt>Core complexity</dt>
+              <dd>Records, details & configuration</dd>
+            </div>
+            <div>
+              <dt>Deliverables</dt>
+              <dd>Navigation · Tables · Side panels</dd>
+            </div>
+          </dl>
+          <a
+            class="case-video"
+            href="https://drive.google.com/file/d/15GKwJbEqkqxpYdHP88K2N9PJkP7mcwC-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="case-play">▶</span><span>Watch walkthrough</span
+            ><span class="case-video-arrow">↗</span></a
+          >
+        </section>
+        <div class="case-cover">
+          <img
+            src="assets/dalil3.png"
+            alt="Delil CRM lead table with contextual contact information side panels"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="case-layout">
+          <aside class="case-toc" aria-label="On this page">
+            <p>On this page</p>
+            <a href="#introduction">01 / Context & Direct Insight</a
+            ><a href="#challenge">02 / The question</a
+            ><a href="#structure">03 / The structure</a
+            ><a href="#decisions">04 / Design decisions</a
+            ><a href="#outcome">05 / Deliverables & next steps</a
+            ><a href="#figmafile">06 / Figma file</a>
+          </aside>
+          <article class="case-content">
+            <section id="introduction">
+              <h2>Context & Direct Insight</h2>
+              <p>
+                Most modern CRM tools force sales reps into a state of cognitive
+                fatigue.
+              </p>
+              <p>
+                To understand the core workflow breakdown before designing a
+                single screen, I audited active user frustrations across Reddit
+                threads, Facebook sales communities, app store reviews, and
+                informal user interviews. The data showed that reps spend up to
+                70% of their operational hours copying and pasting details
+                across multiple window tabs.
+              </p>
+
+              <p>
+                A competitive audit of market leaders like Apollo and Lemlist
+                revealed a critical structural flaw: they treat lead discovery
+                and outreach execution as isolated feature sets, burying the
+                transition action four clicks deep.
+              </p>
+              <p>
+                This platform transforms that fragmented journey into a highly
+                responsive, single-pane system dashboard..
+              </p>
+            </section>
+            <section id="challenge">
+              <h2>A record is only part of the decision.</h2>
+              <p>
+                A list of leads is useful for scanning and comparing. Deciding
+                what to do with a lead needs more context: contact information,
+                company details and related activity. The interface needs to
+                support both levels of work.
+              </p>
+              <p>
+                <strong>The design question:</strong> how can a person inspect a
+                lead without losing their place in the larger list?
+              </p>
+            </section>
+            <section id="structure">
+              <h2>Map the wider workspace.</h2>
+              <p>
+                The product architecture connects account access, administrative
+                flows, integrations and the lead workspace. Mapping those areas
+                creates a framework for decisions inside the table and detail
+                view.
+              </p>
+              <figure>
+                <button
+                  class="image-button"
+                  data-zoom
+                  aria-label="Expand image: Overview of Delil product structure and interface flows"
+                >
+                  <img
+                    src="assets/dalil1.png"
+                    alt="Overview of Delil product structure and interface flows"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>
+                  The wider product structure around the lead-management
+                  experience.
+                  <a
+                    href="mailto:taheerulhassan799@gmail.com?subject=Requesting%20Access%20to%20Figma%20File&body=Hi%20Tatheer%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Figma%20file%20for%20this%20project.%0A%0AReason%20for%20requesting%20access%3A%0A%0A%5BPlease%20briefly%20tell%20me%20what%20you%27d%20like%20to%20review%20the%20file%20for.%5D%0A%0AThanks!"
+                  >
+                    <span>Request Figma File ↗</span>
+                  </a>
+                </figcaption>
+              </figure>
+            </section>
+            <section id="decisions">
+              <h2>Make room for detail without losing the list.</h2>
+              <div class="decision">
+                <small>Decision 01</small>
+                <h3>Open the detail beside the work.</h3>
+                <p>
+                  The lead detail appears in a side panel, preserving the
+                  surrounding table. A person can inspect a record and return to
+                  the list without rebuilding their context.
+                </p>
+                <p class="tradeoff">
+                  <strong>The trade-off:</strong> The side panel has limited
+                  width. Longer content needs a clear hierarchy and a deliberate
+                  small-screen layout.
+                </p>
+              </div>
+              <figure>
+                <button
+                  class="image-button"
+                  data-zoom
+                  aria-label="Expand image: Lead detail panels beside the CRM table"
+                >
+                  <img
+                    src="assets/dalil3.png"
+                    alt="Lead detail panels beside the CRM table"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>
+                  Contextual panels let the record and the surrounding list
+                  remain visible.
+                  <a
+                    href="mailto:taheerulhassan799@gmail.com?subject=Requesting%20Access%20to%20Figma%20File&body=Hi%20Tatheer%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Figma%20file%20for%20this%20project.%0A%0AReason%20for%20requesting%20access%3A%0A%0A%5BPlease%20briefly%20tell%20me%20what%20you%27d%20like%20to%20review%20the%20file%20for.%5D%0A%0AThanks!"
+                  >
+                    <span>Request Figma File ↗</span>
+                  </a>
+                </figcaption>
+              </figure>
+              <div class="decision">
+                <small>Decision 02</small>
+                <h3>Let the table reflect the task.</h3>
+                <p>
+                  Column configuration gives people control over which fields
+                  are visible. This accommodates different ways of reviewing and
+                  comparing leads.
+                </p>
+                <p class="tradeoff">
+                  <strong>The trade-off:</strong> Flexibility can increase setup
+                  effort. Useful default columns and a predictable way to reset
+                  the view remain important.
+                </p>
+              </div>
+              <figure>
+                <button
+                  class="image-button"
+                  data-zoom
+                  aria-label="Expand image: Configuration options within the Delil workspace"
+                >
+                  <img
+                    src="assets/dalil2.png"
+                    alt="Configuration options within the Delil workspace"
+                    loading="lazy"
+                  />
+                </button>
+                <figcaption>
+                  Configuration controls within the product interface.
+                  <a
+                    href="mailto:taheerulhassan799@gmail.com?subject=Requesting%20Access%20to%20Figma%20File&body=Hi%20Tatheer%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Figma%20file%20for%20this%20project.%0A%0AReason%20for%20requesting%20access%3A%0A%0A%5BPlease%20briefly%20tell%20me%20what%20you%27d%20like%20to%20review%20the%20file%20for.%5D%0A%0AThanks!"
+                  >
+                    <span>Request Figma File ↗</span>
+                  </a>
+                </figcaption>
+              </figure>
+              <div class="decision">
+                <small>Decision 03</small>
+                <h3>Use a consistent frame for related tasks.</h3>
+                <p>
+                  The navigation, table area and detail surfaces establish a
+                  shared structure across the workspace. Repeating that frame
+                  keeps attention on the changing content.
+                </p>
+                <p class="tradeoff">
+                  <strong>The trade-off:</strong> Consistency should not force
+                  every task into the same pattern. Complex creation or editing
+                  work may need more space than a panel provides.
+                </p>
+              </div>
+            </section>
+            <section id="outcome">
+              <h2>A connected lead workspace.</h2>
+              <ul class="deliverables">
+                <li>
+                  A mapped structure for account, administrative and product
+                  workflows.
+                </li>
+                <li>Lead tables with contextual detail panels.</li>
+                <li>
+                  Configuration patterns for adapting the workspace to the task.
+                </li>
+              </ul>
+              <div class="learning">
+                <p>
+                  The interface should help people move between overview and
+                  detail while preserving their place.
+                </p>
+              </div>
+              <h3>What I’d test next</h3>
+              <p>
+                I would test finding a relevant lead, comparing two records and
+                returning to the previous table position. I would also check
+                keyboard navigation, panel dismissal and the usefulness of
+                default columns. These are proposed evaluations, not validated
+                outcomes.
+              </p>
+              <a
+                id="figmafile"
+                class="button secondary"
+                href="mailto:taheerulhassan799@gmail.com?subject=Requesting%20Access%20to%20Figma%20File&body=Hi%20Tatheer%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Figma%20file%20for%20this%20project.%0A%0AReason%20for%20requesting%20access%3A%0A%0A%5BPlease%20briefly%20tell%20me%20what%20you%27d%20like%20to%20review%20the%20file%20for.%5D%0A%0AThanks!"
+              >
+                Explore the Figma library ↗
+              </a>
+            </section>
+          </article>
+        </div>
+        <a class="next-project" href="lillup.html"
+          ><div>
+            <p class="eyebrow">Next project</p>
+            <h3>Lillup</h3>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span></a
+        >
+      </div>
+      <section class="contact" id="contact">
+        <div class="wrap contact-layout">
+          <div>
+            <p class="eyebrow">A good place to start</p>
+            <h2>What are you<br />trying to solve?</h2>
+            <p>
+              I’m open to product design roles and focused projects with teams
+              building useful, thoughtful software.
+            </p>
+          </div>
+          <div class="actions">
+            <a class="button" href="mailto:tatheerulhassan799@gmail.com"
+              >Start a conversation
+              <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <p>© 2026 Tatheer Ul Hassan · Sialkot, Pakistan</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/tatheer-ul-hassan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          ><a
+            href="assets/Tatheer-Ul-Hassan-CV.pdf"
+            target="_blank"
+            rel="noopener"
+            >Resume ↗</a
+          ><a href="mailto:tatheerulhassan799@gmail.com">Email ↗</a
+          ><a href="#main">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+    <dialog
+      class="image-dialog"
+      id="image-viewer"
+      aria-label="Expanded project image"
+    >
+      <button class="dialog-close" data-close>Close ×</button><img alt="" />
+    </dialog>
+  </body>
+</html>

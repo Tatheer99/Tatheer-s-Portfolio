@@ -1,0 +1,230 @@
+[
+  {
+    "slug": "renty-power",
+    "name": "Renty Power",
+    "category": "Website & application",
+    "title": "One product, from first visit to everyday use.",
+    "summary": "Website and application design for Renty Power, bringing the public-facing experience and the product interface into one portfolio story.",
+    "reviewStatus": "draft",
+    "projectStage": "Design work",
+    "accent": "#dae9d7",
+    "role": "UX/UI designer across the website and application.",
+    "scope": ["Landing-page design", "Application interface design", "Connected web and app experience"],
+    "context": "My work for Renty Power covered both the website and the application. The scope gives this project two complementary parts: explaining the product to someone encountering it for the first time, and supporting someone who is ready to use it.",
+    "challenge": "How can the website and app feel like one product while serving different user needs? The website needs a clear story; the application needs a clear path through a task.",
+    "approach": [
+      {"title": "Define the job of each surface", "body": "Use the website to establish the product’s purpose, explain the offer and make the next step understandable. Give the application a more focused structure around the work people need to complete."},
+      {"title": "Map the handover", "body": "Follow the journey from a website entry point into the product. Check whether the language, expectations and next action stay consistent across that transition."},
+      {"title": "Connect the visual language", "body": "Use shared typography, controls and interaction patterns as the foundation, then adapt the density and hierarchy to the task on each surface."}
+    ],
+    "decisions": [
+      {"title": "Give the website and app different priorities", "rationale": "A visitor deciding whether the product is relevant needs explanation. A returning user needs efficient access to their next task. The layout should reflect that difference.", "tradeoff": "Too much marketing content inside the app can slow work down; too little explanation on the website can leave the product unclear."},
+      {"title": "Keep terminology consistent across the journey", "rationale": "Use the same names for important concepts, actions and destinations so the transition into the application feels predictable.", "tradeoff": "An internal product term may be unfamiliar to a new visitor. Where needed, introduce it with a plain-language explanation."},
+      {"title": "Design the less obvious states", "rationale": "Include clear feedback when an action is waiting, incomplete or unsuccessful, alongside the main successful path.", "tradeoff": "Covering every edge case at once can expand scope. Prioritise the states that could block a person’s main task."}
+    ],
+    "challenges": [
+      {"title": "A transition that changes expectations", "body": "Check that the website does not promise an action or experience that the app cannot support. Compare the copy and interactions at the handover."},
+      {"title": "Different levels of information density", "body": "The app may need more detail than a landing page. Keep the visual language coherent without forcing both into the same layout."},
+      {"title": "Evidence still to document", "body": "Add the actual workflow, collaboration constraints and feedback that shaped the final design. Outcome claims should follow the evidence available."}
+    ],
+    "reflection": "The strongest case-study story here is the connection between acquisition and product use: what someone is told before entering, and what they can actually do afterward.",
+    "validation": "A useful next evaluation would follow one realistic task from the website into the app, noting hesitation, mismatched expectations and points where people need help.",
+    "images": [
+      {"key": "cover", "label": "Website + app overview", "alt": "Renty Power website and application design overview", "caption": "Show one website screen beside a representative application screen."},
+      {"key": "approach", "label": "The connected journey", "alt": "Renty Power journey from website entry to application task", "caption": "Add the flow or screen sequence that connects the two experiences."},
+      {"key": "decisions", "label": "A decision in detail", "alt": "Renty Power interface detail showing a key design decision", "caption": "Use an annotated screen, alternate direction or important interface state."}
+    ],
+    "questions": ["Which users and tasks did the app serve?", "Which part of the website-to-app journey did you personally define?", "What constraint or feedback changed the design?"],
+    "figmaUrl": "https://www.figma.com/design/jNlI91oTdicodu8qPj7NI6/Website-%7C-Renty-Power--Copy-for-WP-?node-id=15-876"
+  },
+  {
+    "slug": "satlantis",
+    "name": "Satlantis",
+    "category": "Travel community · In progress",
+    "title": "A social space built around travel.",
+    "summary": "An ongoing interface exploration for a social platform for travellers, with an initial set of screens developed so far.",
+    "reviewStatus": "draft",
+    "projectStage": "Work in progress",
+    "accent": "#dceaf8",
+    "role": "Product/UI designer for the initial screen explorations.",
+    "scope": ["Initial product screens", "Travel-community interface exploration", "An evolving visual direction"],
+    "context": "Satlantis is a social platform for travellers. This project is still in progress, and the current work consists of an initial set of screens. The portfolio should show the direction being explored and the questions that remain open.",
+    "challenge": "How can a travel-focused social experience help people understand the context of a post and discover something relevant, while keeping participation approachable?",
+    "approach": [
+      {"title": "Choose a focused starting journey", "body": "Start with one clear use case, such as discovering a travel post and understanding the person or place behind it. Use that journey to guide the first screens."},
+      {"title": "Balance people and places", "body": "Compare how identity, location and content support discovery. Decide what context someone needs before opening a post or taking another step."},
+      {"title": "Keep the exploration testable", "body": "Connect a small set of screens into a prototype. Use it to examine navigation and expectations before expanding the product’s feature set."}
+    ],
+    "decisions": [
+      {"title": "Make travel context visible", "rationale": "A post becomes more useful when a reader can understand its location, topic or relevance without having to guess from the imagery alone.", "tradeoff": "Adding too many labels can crowd the content. Keep the most meaningful context visible and place secondary details deeper in the experience."},
+      {"title": "Keep a consistent path from content to context", "rationale": "Use predictable routes between a post and the relevant person or place, so discovery can continue without losing orientation.", "tradeoff": "Multiple destinations can compete for attention. The hierarchy should make the most likely next step clear."},
+      {"title": "Treat early screens as hypotheses", "rationale": "Keep initial decisions open to revision while the product direction is still developing.", "tradeoff": "An attractive screen can look more finished than the underlying thinking. Distinguish interface exploration from validated product behaviour."}
+    ],
+    "challenges": [
+      {"title": "A small community may have little content", "body": "Consider how the experience could introduce useful content and participation when a person has few connections. This is a product question to investigate, not an observed finding."},
+      {"title": "Location and privacy", "body": "Travel content can reveal sensitive whereabouts. Review how location is shared and what control the person posting should have."},
+      {"title": "Scope is still developing", "body": "Keep the case study explicit about which screens exist today and which flows or features remain proposals."}
+    ],
+    "reflection": "For this stage, the useful outcome is a coherent direction that the team can discuss and test. A few connected screens can reveal more than a much larger set of isolated concepts.",
+    "validation": "A useful next step would be to observe travellers exploring the initial prototype: can they tell what the platform is for, understand a post’s context and find their next action?",
+    "images": [
+      {"key": "cover", "label": "Initial screen explorations", "alt": "Initial Satlantis travel-community screens", "caption": "Add the current screens and keep the work-in-progress scope clear."},
+      {"key": "approach", "label": "One connected journey", "alt": "A connected Satlantis discovery journey", "caption": "Show a short sequence through the screens that currently exist."},
+      {"key": "decisions", "label": "Exploration + trade-off", "alt": "Satlantis interface exploration with a design decision annotated", "caption": "Show an alternative direction or explain one hierarchy decision."}
+    ],
+    "questions": ["Which user journey do the current screens cover?", "What research or product brief informed the direction?", "Which decisions remain open?"],
+    "figmaUrl": "https://www.figma.com/design/GewrexE2gRYOc8ldhv9eBH/Satlantis---Newest-work--Copy-?node-id=0-1"
+  },
+  {
+    "slug": "seo-dashboard",
+    "name": "SEO Dashboard",
+    "category": "Analytics · Dashboard design",
+    "title": "Turn a dashboard into a place to make decisions.",
+    "summary": "Dashboard interface design for an SEO tool, with a focus on organising dense information and making the relationship between overview and detail understandable.",
+    "reviewStatus": "draft",
+    "projectStage": "Design work",
+    "accent": "#e6e0fb",
+    "role": "UX/UI designer for the dashboard interfaces.",
+    "scope": ["Dashboard interface design", "Information hierarchy", "A connected set of analytics screens"],
+    "context": "For this SEO tool, I designed the dashboard interfaces. The work belongs to a different product context from my marketing websites: users come to an analytics workspace to inspect information, compare conditions and decide what needs attention.",
+    "challenge": "How can an SEO dashboard help someone identify what matters and investigate it, without making them work through every metric on the screen?",
+    "approach": [
+      {"title": "Start from the questions", "body": "Organise the dashboard around the questions the product should answer. Identify which information belongs in the first view and which needs a more detailed investigation."},
+      {"title": "Connect overview and detail", "body": "Define a clear path from a summary to the relevant record or breakdown. Preserve important context, such as the selected property and reporting period."},
+      {"title": "Use consistent analytical patterns", "body": "Give filters, tables, charts and status cues a predictable visual language so users can move across screens without relearning the interface."}
+    ],
+    "decisions": [
+      {"title": "Prioritise interpretation over volume", "rationale": "Group the most relevant information at the top of the hierarchy, with enough context to explain why it matters.", "tradeoff": "A simple summary can hide useful detail. Keep a visible path to the underlying information."},
+      {"title": "Keep reporting context explicit", "rationale": "Make the selected scope, time period and comparison understandable wherever a metric appears.", "tradeoff": "Repeated controls can consume space. Use consistent placement and compact labels without making context difficult to find."},
+      {"title": "Choose the display for the question", "rationale": "Use charts for patterns and change, and tables when users need precise values or record-level comparison.", "tradeoff": "Visual consistency should not force every type of information into the same chart or card."}
+    ],
+    "challenges": [
+      {"title": "Density can compete with hierarchy", "body": "Review whether every visible metric supports a real user question. A crowded layout can make important changes harder to notice."},
+      {"title": "A number needs a definition", "body": "Clarify labels, units and comparison periods. Where a metric could be misunderstood, provide a useful definition close to the value."},
+      {"title": "Missing or delayed information", "body": "Consider how the interface should communicate unavailable data, a loading state or an incomplete comparison without implying a zero result."}
+    ],
+    "reflection": "The value of an analytics interface is the judgement it helps someone make. The case study should connect each hierarchy or visualisation choice to a specific question.",
+    "validation": "A useful evaluation would ask users to identify a meaningful change, explain its context and find the supporting detail. Record where they misread a value or lose track of the active filters.",
+    "images": [
+      {"key": "cover", "label": "Dashboard overview", "alt": "Overview of the SEO dashboard design", "caption": "Add a readable overview of the primary dashboard."},
+      {"key": "approach", "label": "Overview → detail", "alt": "SEO dashboard navigation from overview to detailed analysis", "caption": "Show how a person moves from a summary to a more detailed screen."},
+      {"key": "decisions", "label": "An analytical decision", "alt": "SEO chart or table showing a key information-design decision", "caption": "Annotate a chart, table, filter or data state and explain the choice."}
+    ],
+    "questions": ["Who used the tool, and what questions were most important to them?", "Which metrics and reporting contexts were actually included?", "What did you change after stakeholder or user feedback?"],
+    "figmaUrl": "https://www.figma.com/design/KlVxl6CGu9AHH13ExOFwCD/Figma-Dashboard-Design-v2--Copy-?node-id=0-1"
+  },
+  {
+    "slug": "order-cloud",
+    "name": "Order Cloud",
+    "category": "Commerce · Website design",
+    "title": "Help shoppers move from interest to a clear next step.",
+    "summary": "A shopping-website design, presented around product discovery, decision-making and the clarity of the buying journey.",
+    "reviewStatus": "draft",
+    "projectStage": "Design work",
+    "accent": "#f7e4d9",
+    "role": "UX/UI designer for the shopping website.",
+    "scope": ["Shopping website design", "Product presentation", "Commerce interface exploration"],
+    "context": "Order Cloud is a shopping-website project. Its portfolio story can focus on how the interface presents products, supports a purchase decision and makes the next action understandable.",
+    "challenge": "How can the shopping experience give people enough information to decide, while keeping browsing and purchase-related actions easy to follow?",
+    "approach": [
+      {"title": "Understand the buying decision", "body": "Identify what a shopper needs to know before moving forward, such as the product’s purpose, relevant details and the information that could create uncertainty."},
+      {"title": "Connect the browsing journey", "body": "Review how people move between a listing and an individual product. Keep the structure and labels consistent so returning to browse feels predictable."},
+      {"title": "Review decision points on smaller screens", "body": "Check whether product information and the primary action remain understandable when the layout has less space."}
+    ],
+    "decisions": [
+      {"title": "Give the product information a deliberate order", "rationale": "Place the information needed for an initial decision early, and organise supporting detail so it remains easy to find.", "tradeoff": "Showing everything at once can overwhelm a page; hiding important details can make the purchase feel uncertain."},
+      {"title": "Make the main action easy to recognise", "rationale": "Use a clear hierarchy between the primary buying action and secondary actions such as continuing to browse.", "tradeoff": "A prominent button cannot compensate for missing product information. Clarity needs to come before pressure."},
+      {"title": "Keep commerce feedback understandable", "rationale": "Where the design includes purchase-related actions, explain what changed and what the shopper can do next.", "tradeoff": "Too many messages can interrupt browsing. Feedback should be proportionate to the importance of the action."}
+    ],
+    "challenges": [
+      {"title": "Uncertainty before commitment", "body": "Check whether relevant product, price and fulfilment information is available at the point a shopper needs it. Include only the flows and policies actually covered by the project."},
+      {"title": "Long content on a small screen", "body": "Consider how product descriptions, options and actions behave when stacked vertically. A useful hierarchy should survive the responsive layout."},
+      {"title": "Design scope versus implementation", "body": "Specify which parts of the buying journey were designed and which were implemented. Avoid claiming a completed checkout or conversion improvement without supporting evidence."}
+    ],
+    "reflection": "A shopping experience builds confidence through clear information and predictable actions. The strongest screenshots will show those decisions in the moments where a shopper could hesitate.",
+    "validation": "A useful next test would ask someone to find an appropriate product, explain what they understand about it and identify how to proceed. Use the actual purchase flow only if it is part of the project.",
+    "images": [
+      {"key": "cover", "label": "Shopping experience overview", "alt": "Order Cloud shopping website overview", "caption": "Add a representative shopping page from the project."},
+      {"key": "approach", "label": "The browsing journey", "alt": "Order Cloud product browsing flow", "caption": "Show the product-discovery journey covered by your actual design."},
+      {"key": "decisions", "label": "A purchase decision point", "alt": "Order Cloud interface detail at a shopping decision point", "caption": "Annotate a product-information or action-hierarchy decision."}
+    ],
+    "questions": ["What type of products and shoppers was the website designed for?", "Which pages and purchase steps were in your scope?", "What was the most important compromise or constraint?"],
+    "figmaUrl": "https://www.figma.com/design/LNQsgw7xfZjyQ524Sc0EEk/Order-Cloud--Copy-?node-id=0-1"
+  },
+  {
+    "slug": "sponsor-app",
+    "name": "Sponsor App",
+    "category": "Application · Early freelance work",
+    "title": "The first freelance project, with room to reflect.",
+    "summary": "My first freelance design project. A space to explain the brief, my contribution and the decisions I would approach differently with the experience I have today.",
+    "reviewStatus": "draft",
+    "projectStage": "Early freelance project",
+    "accent": "#f3e3ef",
+    "role": "Freelance UX/UI designer.",
+    "scope": ["Application design", "My first freelance project", "A retrospective on early design work"],
+    "context": "Sponsor App was my first freelance project. Including it in the portfolio creates an opportunity to show the work in context and reflect on how my approach to product design has developed.",
+    "challenge": "How can an early freelance brief become a clear, connected application experience? The final case study should name the actual user, their main task and the constraints of the original brief.",
+    "approach": [
+      {"title": "Make the brief specific", "body": "Clarify the intended users, the action the app should support and what a successful task looks like. This gives the interface a purpose beyond a collection of screens."},
+      {"title": "Connect the main path", "body": "Place the key screens in a sequence and check the transition between each step. Look for missing decisions, unclear labels and dead ends."},
+      {"title": "Review the work with today’s perspective", "body": "Compare the original design with the standards you now use. Explain a concrete improvement you would make and the reason behind it."}
+    ],
+    "decisions": [
+      {"title": "Make one important action clear", "rationale": "Use the main user task to establish a hierarchy within each screen and a direction across the flow.", "tradeoff": "A narrow focus can leave secondary needs unresolved. Record what belongs in the initial scope and what needs a later iteration."},
+      {"title": "Use repeated patterns to connect screens", "rationale": "Keep navigation, controls and information placement predictable so the app reads as one experience.", "tradeoff": "Consistency should support the task; it should not force a different type of interaction into an unsuitable layout."},
+      {"title": "Explain what the project taught me", "rationale": "Use an honest retrospective to show how a specific design judgement developed after this first project.", "tradeoff": "A retrospective is useful when it is concrete. Describe a real change in thinking rather than claiming that the entire project was either a success or a failure."}
+    ],
+    "challenges": [
+      {"title": "The original brief needs context", "body": "Add the actual product purpose and user group so a reviewer can understand the screens without opening the full Figma file."},
+      {"title": "Responsibility needs to be explicit", "body": "Separate your own contribution from client requirements, supplied assets and any work completed by collaborators."},
+      {"title": "Reflection needs an example", "body": "Choose one screen or transition that you would improve today. Explain the limitation and show how a different decision could address it."}
+    ],
+    "reflection": "The value of an early project is the combination of ownership and reflection: what I made at the time, what I understand now, and how that learning informs later work.",
+    "validation": "A useful retrospective exercise would test the main task in the original prototype and compare the observations with a revised version. Keep the original and revised work clearly labelled.",
+    "images": [
+      {"key": "cover", "label": "The original project", "alt": "Original Sponsor App freelance design work", "caption": "Add representative screens from the original project."},
+      {"key": "approach", "label": "The main task", "alt": "Sponsor App main user flow", "caption": "Show the flow and identify the part you personally designed."},
+      {"key": "decisions", "label": "A retrospective detail", "alt": "Sponsor App detail with a retrospective design observation", "caption": "Highlight one decision, limitation or improvement you would make today."}
+    ],
+    "questions": ["What does Sponsor App do, and who is it for?", "What exactly did you own in the freelance engagement?", "What is one concrete lesson you applied to later projects?"],
+    "figmaUrl": "https://www.figma.com/design/FIvmDvIcMbhipT7aafau80/Sponsor-App--Copy-?node-id=1697-165286"
+  },
+  {
+    "slug": "marketing-website",
+    "name": "Marketing Website",
+    "category": "Web design · Landing pages & blog",
+    "title": "A coherent website beyond the landing page.",
+    "summary": "A website design spanning landing pages and blog content, with space to show how the page system supports both focused messages and longer reading.",
+    "reviewStatus": "draft",
+    "projectStage": "Design work",
+    "accent": "#f1edcf",
+    "role": "Website UI/UX designer across the page set.",
+    "scope": ["Landing pages", "Blog pages", "A connected website page system"],
+    "context": "This design file includes the website’s pages from the landing page through to the blog. The project can show how one visual language adapts to different content types and visitor intentions.",
+    "challenge": "How can a website feel coherent across pages while allowing a landing page to explain an offer and a blog page to support reading and exploration?",
+    "approach": [
+      {"title": "Give each page a purpose", "body": "Identify what a visitor should understand or do on each page type. Use that purpose to guide the content order and the prominence of actions."},
+      {"title": "Create a shared page language", "body": "Connect navigation, typography, spacing and reusable sections so visitors can move between pages with a sense of continuity."},
+      {"title": "Adapt the structure to the content", "body": "Give longer reading appropriate line lengths and hierarchy, while keeping marketing sections focused on the message and next step."}
+    ],
+    "decisions": [
+      {"title": "Treat the landing page as a sequence", "rationale": "Order the content so visitors can understand the offer, find relevant supporting information and recognise what to do next.", "tradeoff": "A long page can tell a fuller story but also demand more attention. Each section needs a clear reason to exist."},
+      {"title": "Give reading pages a different rhythm", "rationale": "Use a calm text hierarchy and clear navigation for blog content, while maintaining the website’s overall visual identity.", "tradeoff": "Frequent promotional interruptions can compete with reading. Place related actions where they support the reader’s intent."},
+      {"title": "Reuse patterns with room for variation", "rationale": "Use shared sections and controls to connect the page set, with enough flexibility for different content lengths and page purposes.", "tradeoff": "Overly rigid templates can flatten the message. Define the stable elements while allowing the content hierarchy to adapt."}
+    ],
+    "challenges": [
+      {"title": "Real content changes layouts", "body": "Check how headlines, paragraphs and cards behave with different text lengths. Avoid relying on one perfect sample of content."},
+      {"title": "Navigation across page types", "body": "Review whether visitors can understand where they are and move between informational and product-focused content."},
+      {"title": "Responsive and implementation details", "body": "Document the layouts and states actually included in the handoff. Identify any mobile, content-management or implementation constraints that affected the design."}
+    ],
+    "reflection": "A website system is convincing when its pages share a clear identity and still serve distinct purposes. Show that relationship with a small, readable set of full-page and detail views.",
+    "validation": "A useful evaluation would check whether a first-time visitor can explain the offer, find a relevant article and identify the intended next step without prompting.",
+    "images": [
+      {"key": "cover", "label": "The website page set", "alt": "Marketing website landing and blog page designs", "caption": "Add a small overview of the landing and blog pages."},
+      {"key": "approach", "label": "Landing page structure", "alt": "Marketing website landing-page content hierarchy", "caption": "Show the full landing-page sequence or annotate its main sections."},
+      {"key": "decisions", "label": "Reading + reusable patterns", "alt": "Blog page and shared components from the marketing website", "caption": "Show how blog content and reusable sections fit the wider website."}
+    ],
+    "questions": ["What is the client or product name, and who is the website for?", "Which pages and responsive layouts did you personally design?", "What content or implementation constraint influenced the final result?"],
+    "figmaUrl": "https://www.figma.com/design/v65ELV1tJ0NiFND9TqR3ew/Website-2.0--Copy-for-WP-?node-id=1842-12075"
+  }
+]

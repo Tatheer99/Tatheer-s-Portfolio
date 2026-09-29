@@ -1,0 +1,52 @@
+.case-link{display:inline-flex;gap:20px;font-size:12px;margin-top:18px;font-weight:550}.project-card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.2fr 1fr;background:#edf5f1;overflow:hidden}.wide .project-visual{height:355px;border-radius:22px 0 0 22px;border:0;background:#edf5f1;padding:24px}.wide .project-visual img{object-fit:contain}.wide .project-text{display:flex;flex-direction:column;justify-content:center;padding:35px}.wide .project-topline{align-items:start;flex-direction:column-reverse;gap:15px}.wide .project-topline h3{font-size:36px}.wide .project-text p{font-size:19px;line-height:1.5;max-width:320px;color:#475950}.wide .tag{border-color:#c4d6cb}.wide .case-link{margin-top:24px}.wide .go{display:none}@media(max-width:720px){.project-card.wide{display:block}.wide .project-visual{height:auto;aspect-ratio:1.6;border-radius:22px 22px 0 0;padding:18px}.wide .project-text{padding:8px 24px 27px}.wide .project-topline{flex-direction:row;align-items:center;gap:10px}.wide .project-topline h3{font-size:24px}.wide .project-text p{font-size:15px;max-width:none}.wide .case-link{margin-top:17px}}
+.case-cover:has(img[src$="dalil3.png"]){background:#edf5f1;padding:30px}
+@media(max-width:400px){.brand{gap:8px}.brand strong{font-size:11px}.brand small{font-size:9px}.nav-links{gap:10px;font-size:11px}.nav-contact{padding:7px 9px}.nav{gap:10px}.hero-top{gap:12px}.status{font-size:9px}}
+
+
+/* Portfolio navigation + case-study hero cleanup */
+.nav-links{white-space:nowrap}
+.case-cover,.project-image-hero{display:none}
+@media(max-width:800px){.nav-links{gap:12px}.nav-links a{font-size:11px}}
+
+
+/* Mobile navigation */
+.menu-toggle{display:none;border:0;background:transparent;width:42px;height:42px;padding:9px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;border-radius:10px}
+.menu-toggle span{display:block;width:22px;height:2px;background:#171717;border-radius:10px;transition:transform .22s ease,opacity .22s ease}
+.mobile-menu-open .menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.mobile-menu-open .menu-toggle span:nth-child(2){opacity:0}
+.mobile-menu-open .menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:800px){
+  .nav{position:relative}
+  .menu-toggle{display:flex}
+  .nav-links{position:absolute;top:calc(100% + 9px);right:0;width:min(270px,calc(100vw - 34px));display:flex;flex-direction:column;align-items:stretch;gap:0;padding:8px;background:rgba(247,246,242,.97);border:1px solid rgba(0,0,0,.08);border-radius:18px;box-shadow:0 18px 45px rgba(0,0,0,.12);backdrop-filter:blur(18px);opacity:0;visibility:hidden;transform:translateY(-8px) scale(.98);transform-origin:top right;pointer-events:none;transition:opacity .2s ease,transform .2s ease,visibility .2s ease;z-index:80}
+  .mobile-menu-open .nav-links{opacity:1;visibility:visible;transform:translateY(0) scale(1);pointer-events:auto}
+  .nav-links a,.nav-links .nav-contact{font-size:13px!important;padding:13px 14px!important;border-radius:12px;text-align:left;width:100%;box-sizing:border-box}
+  .nav-links .nav-contact{margin-top:3px;text-align:center}
+  .nav-links .nav-resume{display:block}
+  .nav-links a:hover{background:rgba(0,0,0,.045)}
+  .nav-links .nav-contact:hover{background:#171717}
+}
+@media(prefers-reduced-motion:reduce){.nav-links{transition:none!important}.menu-toggle span{transition:none!important}}
+
+
+/* Shared portfolio navigation — keep every page visually consistent with the landing page */
+.site-header{background:rgba(247,246,242,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(222,221,215,.75)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:baseline;gap:0;text-decoration:none}
+.brand-name{display:block;font:800 32px/1 Manrope,sans-serif;letter-spacing:-.045em;color:#171717}
+.brand-dot{display:inline-block;color:#ffd85e;font-size:1.28em;line-height:.6;margin-left:1px;transform:translateY(1px)}
+.nav-links{display:flex;align-items:center;gap:24px;white-space:nowrap;font-size:12px}
+.nav-links a{font-size:12px;color:#4f4f52}
+.nav-links a:hover{color:#000}
+.nav-resume{color:#4f4f52!important}
+.nav-contact{padding:10px 14px;background:#171717!important;color:#fff!important;border-radius:999px}
+@media(max-width:800px){
+  .nav{height:76px}
+  .brand-name{font-size:28px}
+  .nav-links{gap:12px}
+  .nav-links a{font-size:11px}
+  .nav-contact{padding:9px 11px}
+}
+
+/* Use the same closing-section yellow on every page. */
+.contact{background:#FFD85E}

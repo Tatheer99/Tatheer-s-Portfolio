@@ -1,0 +1,25 @@
+TATHEER UL HASSAN · PORTFOLIO
+
+1. Extract this ENTIRE ZIP into a new folder.
+2. Double-click index.html at the top level of that folder.
+3. Keep the CSS files, app.js and assets folder together.
+
+The website is already built. You do not need to install anything
+or run commands just to view it. Styles and fonts work offline.
+
+TO DEPLOY ON VERCEL
+Upload the complete ZIP at https://vercel.com/drop.
+The included vercel.json runs the build and publishes dist.
+If Vercel asks: Framework = Other; Build = node scripts/build.mjs;
+Output Directory = dist.
+
+TO EDIT CONTENT OR ADD SCREENSHOTS
+Read EDITING-GUIDE.md. Editable copy is in content/projects.json.
+Add screenshots under assets/projects/ in the relevant project folder.
+Then rebuild with: node scripts/build.mjs
+
+The six new case studies are drafts: confirm the narrative before
+changing each project reviewStatus from draft to ready.
+
+The templates folder contains source text, not pages to open.
+Always start with index.html in this folder.
