@@ -119,6 +119,7 @@ if (menuToggle && siteMenu) {
   face.className = 'tatheer-eyes';
   face.setAttribute('aria-hidden', 'true');
   face.innerHTML = `
+    <div class="tatheer-eyebrows"><span></span><span></span></div>
     <div class="tatheer-eye"><span class="tatheer-pupil"></span><i></i></div>
     <div class="tatheer-eye"><span class="tatheer-pupil"></span><i></i></div>
     <div class="tatheer-bubble"></div>`;
@@ -132,7 +133,7 @@ if (menuToggle && siteMenu) {
     tx: innerWidth / 2, ty: innerHeight / 2,
     hover: null, hoverType: null, lastMove: performance.now(), moving: false,
     targetCounts: new WeakMap(), targetLast: new WeakMap(),
-    lastComment: '', bubbleTimer: null, blinkTimer: null, blinkBusy: false, lastCommentAt: 0
+    lastComment: '', bubbleTimer: null, blinkTimer: null, blinkBusy: false, lastCommentAt: 0, emotion: 'neutral'
   };
   const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
   const sameTarget = (a,b) => a === b;
@@ -525,6 +526,26 @@ if (menuToggle && siteMenu) {
     return sectionPools[type] || sectionPools.generic;
   };
 
+  // Small emotional reactions make the cursor character feel alive without
+  // changing the existing comment system.
+  const setEmotion = type => {
+    let emotion = 'neutral';
+    if (type === 'contact' || type === 'seeWork') emotion = 'happy';
+    else if (type === 'heroCard') emotion = 'annoyed';
+    else if (type === 'project' || type === 'work') emotion = 'proud';
+    else if (type === 'thinking') emotion = 'curious';
+    else if (type === 'resume') emotion = 'nervous';
+    else if (type === 'about') emotion = 'shy';
+    else if (type === 'footer' || type === 'more') emotion = 'sad';
+    else if (type === 'image' || type === 'video') emotion = 'surprised';
+    else if (type === 'text') emotion = 'sleepy';
+
+    if (state.emotion !== emotion) {
+      state.emotion = emotion;
+      face.dataset.emotion = emotion;
+    }
+  };
+
   const showComment = (type, key, duration = 2300, force = false) => {
     // Keep the personality as an easter egg: comments appear selectively rather than constantly.
     const now = performance.now();
@@ -571,6 +592,7 @@ if (menuToggle && siteMenu) {
     const changed = !sameTarget(result.key, state.hover) || result.type !== state.hoverType;
     state.hover = result.key;
     state.hoverType = result.type;
+    setEmotion(result.type);
     if (click || changed) {
       const duration = click ? 2700 : (result.type === 'heroCard' ? 2400 : 2250);
       showComment(result.type, result.key, duration, click);
@@ -588,6 +610,7 @@ if (menuToggle && siteMenu) {
   document.addEventListener('mouseleave', () => {
     state.hover = null;
     state.hoverType = null;
+    setEmotion('generic');
   });
 
   document.addEventListener('click', e => {
@@ -597,7 +620,10 @@ if (menuToggle && siteMenu) {
 
   document.addEventListener('selectionchange', () => {
     const sel = window.getSelection();
-    if (sel && sel.toString().trim().length > 3) showComment('text', face, 1900);
+    if (sel && sel.toString().trim().length > 3) {
+      setEmotion('text');
+      showComment('text', face, 1900);
+    }
   });
 
   const tick = () => {

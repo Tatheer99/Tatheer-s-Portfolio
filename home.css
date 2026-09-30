@@ -238,3 +238,54 @@
 
 /* Shared closing yellow */
 .contact{background:#FFD85E}
+
+/* Cursor character emotional expressions */
+.tatheer-eyes{height:42px}
+.tatheer-eye{top:7px;transition:border-radius .18s ease,transform .18s ease}
+.tatheer-eye:first-of-type{left:0}.tatheer-eye:nth-of-type(2){left:35px}
+.tatheer-pupil{transition:transform .18s ease,width .18s ease,height .18s ease}
+.tatheer-eyebrows{position:absolute;inset:0;z-index:3;pointer-events:none}
+.tatheer-mouth{position:absolute;left:23px;top:33px;width:20px;height:9px;z-index:4;pointer-events:none;box-sizing:border-box;border:2.2px solid transparent;border-bottom-color:#171717;border-radius:0 0 14px 14px;transform:rotate(-2deg);transform-origin:center;transition:transform .22s ease,width .22s ease,height .22s ease,border-radius .22s ease,border-color .22s ease,opacity .22s ease;filter:none}
+.tatheer-mouth::after{content:"";position:absolute;left:50%;top:1px;width:3px;height:3px;border-radius:50%;background:#171717;transform:translateX(-50%) scale(0);opacity:0;transition:transform .18s ease,opacity .18s ease}
+
+
+.tatheer-eyebrows span{position:absolute;top:2px;width:22px;height:4px;border-radius:99px;background:#171717;transform-origin:center;transition:transform .18s ease,opacity .18s ease}
+.tatheer-eyebrows span:first-child{left:3px}.tatheer-eyebrows span:last-child{left:38px}
+.tatheer-eyes[data-emotion="happy"] .tatheer-eye{border-radius:50% 50% 46% 46%;transform:scaleY(.84)}
+.tatheer-eyes[data-emotion="happy"] .tatheer-eyebrows span:first-child{transform:rotate(-8deg) translateY(-1px)}
+.tatheer-eyes[data-emotion="happy"] .tatheer-eyebrows span:last-child{transform:rotate(8deg) translateY(-1px)}
+.tatheer-eyes[data-emotion="sad"] .tatheer-eye{border-radius:48% 48% 55% 55%;transform:translateY(2px) scaleY(.9)}
+.tatheer-eyes[data-emotion="sad"] .tatheer-eyebrows span:first-child{transform:rotate(18deg) translateY(3px)}
+.tatheer-eyes[data-emotion="sad"] .tatheer-eyebrows span:last-child{transform:rotate(-18deg) translateY(3px)}
+.tatheer-eyes[data-emotion="sad"] .tatheer-pupil{transform:translateY(4px)!important}
+.tatheer-eyes[data-emotion="annoyed"] .tatheer-eyebrows span:first-child{transform:rotate(18deg) translateY(3px)}
+.tatheer-eyes[data-emotion="annoyed"] .tatheer-eyebrows span:last-child{transform:rotate(-18deg) translateY(3px)}
+.tatheer-eyes[data-emotion="annoyed"] .tatheer-eye{transform:scaleY(.82)}
+.tatheer-eyes[data-emotion="proud"] .tatheer-eyebrows span{transform:translateY(-2px)}
+.tatheer-eyes[data-emotion="proud"] .tatheer-eye{transform:scaleY(.9)}
+.tatheer-eyes[data-emotion="curious"] .tatheer-eyebrows span:first-child{transform:rotate(-15deg) translateY(-2px)}
+.tatheer-eyes[data-emotion="curious"] .tatheer-eyebrows span:last-child{transform:rotate(8deg) translateY(1px)}
+.tatheer-eyes[data-emotion="nervous"] .tatheer-eyebrows span{transform:translateY(2px) scaleX(.88)}
+.tatheer-eyes[data-emotion="nervous"] .tatheer-pupil{width:7px;height:7px;margin:-3.5px}
+.tatheer-eyes[data-emotion="shy"] .tatheer-eye{transform:translateY(2px)}
+.tatheer-eyes[data-emotion="shy"] .tatheer-eyebrows span:first-child{transform:rotate(-10deg) translateY(2px)}
+.tatheer-eyes[data-emotion="shy"] .tatheer-eyebrows span:last-child{transform:rotate(10deg) translateY(2px)}
+.tatheer-eyes[data-emotion="surprised"] .tatheer-eye{transform:scale(1.08)}
+.tatheer-eyes[data-emotion="surprised"] .tatheer-pupil{width:8px;height:8px;margin:-4px}
+.tatheer-eyes[data-emotion="surprised"] .tatheer-eyebrows span{transform:translateY(-3px)}
+.tatheer-eyes[data-emotion="sleepy"] .tatheer-eye{transform:scaleY(.62) translateY(5px)}
+.tatheer-eyes[data-emotion="sleepy"] .tatheer-eyebrows span{transform:translateY(4px);opacity:.75}
+
+/* Correct eye positions after adding expression eyebrows */
+.tatheer-eye:nth-child(2){left:0!important}.tatheer-eye:nth-child(3){left:35px!important}
+
+.tatheer-eyes[data-emotion="happy"] .tatheer-mouth{width:21px;height:10px;transform:rotate(0deg) translateY(-1px);border-bottom-width:2.5px;border-radius:0 0 16px 16px}
+.tatheer-eyes[data-emotion="sad"] .tatheer-mouth{width:20px;height:9px;transform:rotate(0deg) translateY(2px);border-bottom-color:transparent;border-top-color:#171717;border-radius:15px 15px 0 0}
+.tatheer-eyes[data-emotion="annoyed"] .tatheer-mouth{width:18px;height:3px;transform:rotate(3deg) translateY(1px);border-bottom-width:2.2px;border-radius:0;opacity:.95}
+.tatheer-eyes[data-emotion="proud"] .tatheer-mouth{width:20px;height:9px;transform:rotate(-2deg) translateY(-1px);border-bottom-width:2.4px;border-radius:0 0 15px 15px}
+.tatheer-eyes[data-emotion="curious"] .tatheer-mouth{width:18px;height:8px;transform:rotate(-7deg);border-bottom-width:2.2px;border-radius:0 0 13px 13px}
+.tatheer-eyes[data-emotion="nervous"] .tatheer-mouth{width:10px;height:8px;transform:rotate(0deg);border-color:#171717;border-radius:50%;}
+.tatheer-eyes[data-emotion="shy"] .tatheer-mouth{width:16px;height:7px;transform:rotate(-3deg) translateY(1px);border-bottom-width:2px;border-radius:0 0 12px 12px;opacity:.82}
+.tatheer-eyes[data-emotion="surprised"] .tatheer-mouth{width:10px;height:12px;transform:rotate(0) translateY(0);border-color:#171717;border-radius:50%;}
+.tatheer-eyes[data-emotion="sleepy"] .tatheer-mouth{width:13px;height:3px;transform:rotate(2deg) translateY(2px);border-bottom-width:2px;border-radius:0;opacity:.7}
+
