@@ -3,4 +3,7 @@
   "framework": null,
   "buildCommand": "echo skip",
   "outputDirectory": "."
+  "cleanUrls": true,
+  "trailingSlash": false
+
 }
