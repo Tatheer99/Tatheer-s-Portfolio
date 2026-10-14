@@ -128,13 +128,11 @@
               </p>
             </section>
             <section id="research">
-              <h2>The Constraints</h2>
-              <h3>(Google Form output + Quantitative Audit)</h3>
+              <h2>What the research said</h2>
+
               <p>
-                As my first freelance system contract, I backed my design
-                architecture by analyzing 36 raw, multi-audience survey
-                responses alongside qualitative workflow audits of legacy
-                platforms.
+                To ground the system, I surveyed 36 engineering leaders and
+                audited the workflows of existing platforms.
               </p>
               <figure>
                 <button
@@ -149,9 +147,9 @@
                   />
                 </button>
                 <figcaption>
-                  Participants were recruited organically through Reddit,
-                  Facebook, social media, and personal outreach to people in my
-                  network.<a
+                  Respondents were recruited through Reddit, Facebook, and
+                  personal outreach. Self-reported data, used as directional
+                  signal.<a
                     href="https://docs.google.com/spreadsheets/d/1WftCgQMASKJRGjuREkrg8bkQZbIy68CRK9WTSUvodus/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -163,20 +161,19 @@
               <h3>3 Data-Driven Decisions That Rewrote the Architecture:</h3>
               <ul class="deliverables">
                 <li>
-                  Data from 36 engineering leaders proved that 86% of target
-                  users abandon metrics tracking entirely if configuring a view
-                  requires more than three distinct filtering selections.
+                  86% said they’d abandon a metrics view if setup took more than
+                  three filter selections. So I capped configuration at three
+                  steps.
                 </li>
                 <li>
-                  61% of respondents explicitly cited "sparse layouts and
-                  endless vertical scrolling" as the primary reason critical
-                  master build exceptions and pipeline failures go completely
-                  unnoticed.
+                  61% said sparse layouts and endless scrolling are why critical
+                  build failures go unnoticed. So I made the dashboard denser
+                  and moved key signals higher.
                 </li>
                 <li>
-                  Over 69% of engineering groups rely on manual code comments or
-                  basic keyword scripts, admitting they skip parsing high-volume
-                  logs due to configuration fatigue and interface clutter.
+                  69% rely on manual code comments or keyword scripts and skip
+                  high-volume logs because of clutter. So I put an AI summary on
+                  top, with the detail one step below.
                 </li>
               </ul>
             </section>
@@ -192,7 +189,7 @@
                 dynamically expand based on code complexity.
 
                 <br />
-                design file brings buttons, form controls, cards and other
+                The Figma file brings buttons, form controls, cards and other
                 interface elements into a shared library. The product screens
                 then reuse a common visual hierarchy for navigation, summaries
                 and more detailed information.
